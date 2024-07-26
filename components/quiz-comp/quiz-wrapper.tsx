@@ -7,6 +7,7 @@ import { ArrowBigRight } from "lucide-react";
 import { RotateCcw } from "lucide-react";
 import { rightAnswerStyle, wrongAnswerStyle } from "./quiz-buttons-effect";
 import { SelectQuizSubject } from "./quiz-subjects";
+import { QuizProgress } from "./quiz-progress";
 
 export default function QuizWrapper() {
     const context = useContext(QuizContext);
@@ -16,13 +17,19 @@ export default function QuizWrapper() {
     const { Replay, score, quizState, quizData, CheckAnswer, NextQuestion, disablAnswers, isAnswered } = context;
     return (
         <section className="w-full h-full md:max-w-2xl flex flex-col gap-10 justify-center items-center mx-auto">
-            {/* <div className="w-full">
-                <SelectQuizSubject />
-            </div> */}
+            {
+                /* <div className="w-full">
+                    <SelectQuizSubject />
+                </div> */
+            }
+            {
+                quizData && <QuizProgress />
+            }
             {
                 quizState.length > 0 ? quizData?.question.map(qts => (
                     <div className={clsx("w-full flex flex-col items-center md:gap-24 gap-16")} key={quizData?.id}>
                         <div className="w-full rounded-xl text-center bg-[#FFBF00] shadow-md border-l-4 border-[#FF9A00] md:px-8 px-4 md:py-6 py-4">
+
                             <p className="text-3xl md:font-semibold font-bold md:tracking-wider tracking-wide text-primary select-none">{qts.label}</p>
                         </div>
                         <div className="w-full grid md:grid-cols-2 gap-5 px-6">

@@ -1,3 +1,4 @@
+import { QuizProgress } from "@/components/quiz-comp/quiz-progress";
 import QuizWrapper from "@/components/quiz-comp/quiz-wrapper";
 
 export default function Home() {
