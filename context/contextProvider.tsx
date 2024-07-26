@@ -52,14 +52,16 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
 
   function CheckAnswer(rightOne: string, userOne: string) {
     setTimeout(() => {
+      //? enable answers buttons:
       setDisablAnswers(() => true);
       if (rightOne === userOne) {
+
         setScore(prev => ({
           points: prev.points + 1,
           result: (
-            score.points < 4 ? "Bad score" :
-              score.points < 7 ? "Laverage score" :
-                score.points < 10 ? "Good score" : "Excellent score"
+            prev.points < 4 ? "Bad score" :
+              prev.points < 7 ? "Laverage score" :
+                prev.points < 10 ? "Good score" : "Excellent score"
           )
         }));
         return setIsAnswered(() => ({ status: true, answer: true, rightOne, userOne }))
