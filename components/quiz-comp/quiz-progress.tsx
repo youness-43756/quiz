@@ -4,14 +4,10 @@ import * as React from "react"
 
 import { Progress } from "@/components/ui/progress"
 import { QuizContext } from "@/context/contextProvider";
+import { QuizQuestionsProps } from "@/lib/quiz-questions/q";
 
-export function QuizProgress() {
+export function QuizProgress({ quizState }: { quizState:QuizQuestionsProps }) {
     const [progress, setProgress] = React.useState(0)
-    const context = React.useContext(QuizContext);
-    if (!context) {
-        return;
-    }
-    const { quizState } = context;
 
     React.useEffect(() => {
         const timer = setTimeout(() => setProgress((quizState?.length * 6.25)), 500)

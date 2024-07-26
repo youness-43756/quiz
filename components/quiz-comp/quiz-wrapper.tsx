@@ -23,7 +23,7 @@ export default function QuizWrapper() {
                 </div> */
             }
             {
-                quizData && <QuizProgress />
+                quizData && <QuizProgress quizState={quizState} />
             }
             {
                 quizState.length > 0 ? quizData?.question.map(qts => (
