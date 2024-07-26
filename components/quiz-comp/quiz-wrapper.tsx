@@ -21,11 +21,11 @@ export default function QuizWrapper() {
             </div> */}
             {
                 quizState.length > 0 ? quizData?.question.map(qts => (
-                    <div className={clsx("w-full flex flex-col items-center md:gap-16 gap-14")} key={quizData?.id}>
+                    <div className={clsx("w-full flex flex-col items-center md:gap-24 gap-16")} key={quizData?.id}>
                         <div className="w-full rounded-xl text-center bg-[#FFBF00] shadow-md border-l-4 border-[#FF9A00] md:px-8 px-4 md:py-6 py-4">
-                            <p className="text-3xl md:font-semibold font-bold tracking-wider text-primary select-none">{qts.label}</p>
+                            <p className="text-3xl md:font-semibold font-bold md:tracking-wider tracking-wide text-primary select-none">{qts.label}</p>
                         </div>
-                        <div className="w-full grid md:grid-cols-2 gap-6 px-6">
+                        <div className="w-full grid md:grid-cols-2 gap-5 px-6">
                             {
                                 qts.answers.map(answer => <Button
                                     size={"lg"}
@@ -33,7 +33,7 @@ export default function QuizWrapper() {
                                     variant={"secondary"}
                                     disabled={disablAnswers}
                                     onClick={() => CheckAnswer(qts.rightAnswer, answer.id)}
-                                    className={clsx("flex justify-start text-lg md:font-medium font-semibold select-none text-wrap",
+                                    className={clsx("flex justify-start text-lg md:font-medium font-bold select-none text-wrap",
                                         isAnswered?.status &&
                                         (isAnswered?.answer ?
                                             (qts.rightAnswer === answer.id && rightAnswerStyle) :
