@@ -6,12 +6,12 @@ import { Progress } from "@/components/ui/progress"
 import { QuizContext } from "@/context/contextProvider";
 
 export function QuizProgress() {
+    const [progress, setProgress] = React.useState(0)
     const context = React.useContext(QuizContext);
     if (!context) {
         return;
     }
     const { quizState } = context;
-    const [progress, setProgress] = React.useState(0)
 
     React.useEffect(() => {
         const timer = setTimeout(() => setProgress((quizState?.length * 6.25)), 500)
