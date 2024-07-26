@@ -25,7 +25,7 @@ export default function QuizWrapper() {
                         <div className="w-full rounded-xl text-center bg-[#FFBF00] shadow-md border-l-4 border-[#FF9A00] px-8 py-6">
                             <p className="text-3xl md:font-semibold font-bold tracking-wider text-primary select-none">{qts.label}</p>
                         </div>
-                        <div className="w-full grid md:grid-cols-2 gap-5 px-6">
+                        <div className="w-full grid md:grid-cols-2 md:gap-4 gap-2 px-6">
                             {
                                 qts.answers.map(answer => <Button
                                     size={"lg"}
@@ -33,7 +33,7 @@ export default function QuizWrapper() {
                                     variant={"secondary"}
                                     disabled={disablAnswers}
                                     onClick={() => CheckAnswer(qts.rightAnswer, answer.id)}
-                                    className={clsx("text-lg flex justify-start select-none text-wrap",
+                                    className={clsx("flex justify-start text-lg md:font-medium font-semibold select-none text-wrap",
                                         isAnswered?.status &&
                                         (isAnswered?.answer ?
                                             (qts.rightAnswer === answer.id && rightAnswerStyle) :
