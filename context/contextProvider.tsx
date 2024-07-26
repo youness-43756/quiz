@@ -8,7 +8,7 @@ type isAnsweredTypes = {
   rightOne: string;
   userOne: string
 }
-type scoreTypes = { points: number; result: string }
+export type scoreTypes = { points: number; result: string }
 
 interface QuizContextType {
   quizState: QuizQuestionsProps; setQuizState: Dispatch<SetStateAction<QuizQuestionsProps>>;
@@ -55,7 +55,6 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
       setDisablAnswers(() => true);
       if (rightOne === userOne) {
         setScore(prev => ({
-          // ...score,
           points: prev.points + 1,
           result: (
             score.points < 4 ? "Bad score" :

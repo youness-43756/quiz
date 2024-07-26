@@ -3,10 +3,10 @@
 import * as React from "react"
 
 import { Progress } from "@/components/ui/progress"
-import { QuizContext } from "@/context/contextProvider";
 import { QuizQuestionsProps } from "@/lib/quiz-questions/q";
+import clsx from "clsx";
 
-export function QuizProgress({ quizState }: { quizState:QuizQuestionsProps }) {
+export function QuizProgress({ quizState }: { quizState: QuizQuestionsProps }) {
     const [progress, setProgress] = React.useState(0)
 
     React.useEffect(() => {
@@ -14,5 +14,5 @@ export function QuizProgress({ quizState }: { quizState:QuizQuestionsProps }) {
         return () => clearTimeout(timer)
     }, [quizState])
 
-    return <Progress value={progress} className="w-[100%] " />
+    return <Progress value={progress} className={clsx("w-[100%]", quizState?.length === 0 && "hidden")} />
 }

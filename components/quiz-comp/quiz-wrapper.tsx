@@ -8,6 +8,7 @@ import { RotateCcw } from "lucide-react";
 import { rightAnswerStyle, wrongAnswerStyle } from "./quiz-buttons-effect";
 import { SelectQuizSubject } from "./quiz-subjects";
 import { QuizProgress } from "./quiz-progress";
+import QuizScore from "./quiz-score";
 
 export default function QuizWrapper() {
     const context = useContext(QuizContext);
@@ -56,12 +57,7 @@ export default function QuizWrapper() {
                             }
                         </div>
                     </div>
-                )) : <div className="flex flex-col items-center gap-8">
-                    <span className="text-5xl font-bold text-white">{score.result}</span>
-                    <Button variant={"destructive"} onClick={() => Replay()}>
-                        <RotateCcw />
-                    </Button>
-                </div>
+                )) : <QuizScore replay={Replay} score={score} />
             }
             {
                 isAnswered ? (
