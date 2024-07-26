@@ -21,11 +21,11 @@ export default function QuizWrapper() {
             </div> */}
             {
                 quizState.length > 0 ? quizData?.question.map(qts => (
-                    <div className={clsx("w-full flex flex-col items-center gap-16")} key={quizData?.id}>
-                        <div className="w-full rounded-xl text-center bg-[#FFBF00] shadow-md border-l-4 border-[#FF9A00] px-8 py-6">
+                    <div className={clsx("w-full flex flex-col items-center md:gap-16 gap-14")} key={quizData?.id}>
+                        <div className="w-full rounded-xl text-center bg-[#FFBF00] shadow-md border-l-4 border-[#FF9A00] md:px-8 px-4 md:py-6 py-4">
                             <p className="text-3xl md:font-semibold font-bold tracking-wider text-primary select-none">{qts.label}</p>
                         </div>
-                        <div className="w-full grid md:grid-cols-2 md:gap-4 gap-2 px-6">
+                        <div className="w-full grid md:grid-cols-2 gap-6 px-6">
                             {
                                 qts.answers.map(answer => <Button
                                     size={"lg"}
