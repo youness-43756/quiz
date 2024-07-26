@@ -22,8 +22,8 @@ export default function QuizWrapper() {
             {
                 quizState.length > 0 ? quizData?.question.map(qts => (
                     <div className={clsx("w-full flex flex-col items-center gap-16")} key={quizData?.id}>
-                        <div className="w-full rounded-xl text-center text-3xl font-semibold tracking-wider text-primary bg-[#FFBF00] shadow-md border-l-4 border-[#FF9A00] px-8 py-6">
-                            <p className="select-none">{qts.label}</p>
+                        <div className="w-full rounded-xl text-center bg-[#FFBF00] shadow-md border-l-4 border-[#FF9A00] px-8 py-6">
+                            <p className="text-3xl md:font-semibold font-bold tracking-wider text-primary select-none">{qts.label}</p>
                         </div>
                         <div className="w-full grid md:grid-cols-2 gap-5 px-6">
                             {
