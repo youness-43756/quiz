@@ -14,5 +14,5 @@ export function QuizProgress({ quizState }: { quizState: QuizQuestionsTypes }) {
         return () => clearTimeout(timer)
     }, [quizState])
 
-    return <Progress value={progress} className={clsx("w-[100%]", quizState?.length === 0 && "hidden")} />
+    return <Progress value={progress} className={clsx("w-full")} />
 }

@@ -40,7 +40,7 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
     setDisablAnswers(() => true);
     setTimeout(() => {
       setDisablAnswers(() => false);
-    }, 110);
+    }, 115);
 
     setScore(() => ({ points: 0, result: "Horrible score!" }));
     setSubject(() => value);
@@ -80,6 +80,7 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   function Replay() {
+    console.log(score);
     setScore({ points: 0, result: "Horible score!" })
     setQuizState(questionsBySubject[0].quiz)
     return;

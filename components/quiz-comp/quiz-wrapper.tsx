@@ -18,12 +18,15 @@ export default function QuizWrapper() {
     const { Replay, score, quizState, quizData, CheckAnswer, NextQuestion, disablAnswers, isAnswered } = context;
     return (
         <section className="w-full h-full md:max-w-2xl flex flex-col gap-6 justify-center items-center mx-auto">
-            <div className={clsx("w-full", quizData ? "block" : "hidden")}>
-                <SelectQuizSubject />
+            <div className={clsx("w-full flex-col items-start gap-4", quizData ? "flex" : "hidden")}>
+
+                <div className={clsx("w-fit")}>
+                    <SelectQuizSubject />
+                </div>
+                <div className="w-full flex-1">
+                    <QuizProgress quizState={quizState} />
+                </div>
             </div>
-            {
-                quizData && <QuizProgress quizState={quizState} />
-            }
             {
                 quizState.length > 0 ? quizData?.question.map(qts => (
                     <div className={clsx("w-full flex flex-col items-center md:gap-20 gap-16")} key={quizData?.id}>
@@ -40,7 +43,7 @@ export default function QuizWrapper() {
                                     variant={"secondary"}
                                     disabled={disablAnswers}
                                     onClick={() => CheckAnswer(qts.rightAnswer, answer.id)}
-                                    className={clsx("flex justify-start text-lg md:font-medium font-semibold select-none text-wrap",
+                                    className={clsx("h-fit py-1.5 flex justify-start text-lg md:font-medium font-semibold select-none text-wrap gap-2",
                                         isAnswered?.status &&
                                         (isAnswered?.answer ?
                                             (qts.rightAnswer === answer.id && rightAnswerStyle) :

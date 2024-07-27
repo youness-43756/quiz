@@ -2,20 +2,21 @@ import { QuizQuestionsWithSubjectsTypes } from "./qTypes";
 
 export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
   {
-    id: 0,
-    subject: "nature",
+    id: 15,
+    subject: "Hadith and Sunnah",
+
     quiz: [
       {
         id: 0,
         question: [
           {
-            label: "What is the largest mammal in the world?",
+            label: "ما هو أول كتاب حديث تم جمعه في الإسلام؟",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Blue Whale" },
-              { id: "b", answer: "Elephant" },
-              { id: "c", answer: "Giraffe" },
-              { id: "d", answer: "Rhino" },
+              { id: "a", answer: "الموطأ" },
+              { id: "b", answer: "صحيح البخاري" },
+              { id: "c", answer: "صحيح مسلم" },
+              { id: "d", answer: "سنن أبي داود" },
             ],
           },
         ],
@@ -24,13 +25,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 1,
         question: [
           {
-            label: "What is the tallest tree in the world?",
+            label: "من هو الصحابي الذي روى أكبر عدد من الأحاديث؟",
             rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Baobab" },
-              { id: "b", answer: "Redwood" },
-              { id: "c", answer: "Douglas Fir" },
-              { id: "d", answer: "Sequoia" },
+              { id: "a", answer: "عمر بن الخطاب" },
+              { id: "b", answer: "أبو هريرة" },
+              { id: "c", answer: "عبد الله بن عباس" },
+              { id: "d", answer: "عائشة بنت أبي بكر" },
             ],
           },
         ],
@@ -39,13 +40,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 2,
         question: [
           {
-            label: "What is the largest rainforest in the world?",
+            label: "ما هو معنى كلمة 'سنة' في الإسلام؟",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Congo Rainforest" },
-              { id: "b", answer: "Daintree Rainforest" },
-              { id: "c", answer: "Amazon Rainforest" },
-              { id: "d", answer: "Southeast Asian Rainforest" },
+              { id: "a", answer: "القرآن" },
+              { id: "b", answer: "الجهاد" },
+              { id: "c", answer: "التعاليم والأفعال النبوية" },
+              { id: "d", answer: "الصلاة" },
             ],
           },
         ],
@@ -54,13 +55,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 3,
         question: [
           {
-            label: "Which bird is known for its impressive mimicry skills?",
+            label: "من هو مؤلف كتاب 'صحيح البخاري'؟",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Canary" },
-              { id: "b", answer: "Parrot" },
-              { id: "c", answer: "Nightingale" },
-              { id: "d", answer: "Lyrebird" },
+              { id: "a", answer: "الإمام مسلم" },
+              { id: "b", answer: "الإمام أبو داود" },
+              { id: "c", answer: "الإمام الترمذي" },
+              { id: "d", answer: "الإمام البخاري" },
             ],
           },
         ],
@@ -69,13 +70,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 4,
         question: [
           {
-            label: "What is the fastest land animal?",
+            label: "كم عدد الأحاديث في كتاب 'صحيح مسلم'؟",
             rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Lion" },
-              { id: "b", answer: "Cheetah" },
-              { id: "c", answer: "Gazelle" },
-              { id: "d", answer: "Horse" },
+              { id: "a", answer: "5000" },
+              { id: "b", answer: "4000" },
+              { id: "c", answer: "3000" },
+              { id: "d", answer: "2000" },
             ],
           },
         ],
@@ -84,13 +85,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 5,
         question: [
           {
-            label: "What is the most poisonous animal in the world?",
-            rightAnswer: "c",
+            label: "ما هو المقصود بكلمة 'حديث قدسي'؟",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "King Cobra" },
-              { id: "b", answer: "Stonefish" },
-              { id: "c", answer: "Box Jellyfish" },
-              { id: "d", answer: "Poison Dart Frog" },
+              { id: "a", answer: "كلام الله المروي عن النبي" },
+              { id: "b", answer: "كلام النبي فقط" },
+              { id: "c", answer: "أقوال الصحابة" },
+              { id: "d", answer: "أفعال التابعين" },
             ],
           },
         ],
@@ -99,13 +100,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 6,
         question: [
           {
-            label: "What type of animal is a Komodo dragon?",
-            rightAnswer: "a",
+            label: "أي من هؤلاء هو أحد كتب السنن الأربعة؟",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Lizard" },
-              { id: "b", answer: "Snake" },
-              { id: "c", answer: "Crocodile" },
-              { id: "d", answer: "Turtle" },
+              { id: "a", answer: "صحيح البخاري" },
+              { id: "b", answer: "صحيح مسلم" },
+              { id: "c", answer: "سنن أبي داود" },
+              { id: "d", answer: "الموطأ" },
             ],
           },
         ],
@@ -114,13 +115,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 7,
         question: [
           {
-            label: "Which is the only flying mammal?",
+            label: "ما هو عدد الأحاديث المتفق عليها بين البخاري ومسلم؟",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Flying Squirrel" },
-              { id: "b", answer: "Gliding Lemur" },
-              { id: "c", answer: "Pterodactyl" },
-              { id: "d", answer: "Bat" },
+              { id: "a", answer: "3000" },
+              { id: "b", answer: "4000" },
+              { id: "c", answer: "2000" },
+              { id: "d", answer: "1906" },
             ],
           },
         ],
@@ -129,13 +130,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 8,
         question: [
           {
-            label: "Which animal has the longest lifespan?",
-            rightAnswer: "c",
+            label: "ما هو المقصود بـ 'علم الجرح والتعديل'؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Elephant" },
-              { id: "b", answer: "Blue Whale" },
-              { id: "c", answer: "Greenland Shark" },
-              { id: "d", answer: "Galapagos Tortoise" },
+              { id: "a", answer: "تفسير القرآن" },
+              { id: "b", answer: "تحقيق صحة الأحاديث" },
+              { id: "c", answer: "شرح الأحاديث" },
+              { id: "d", answer: "كتابة السيرة النبوية" },
             ],
           },
         ],
@@ -144,13 +145,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 9,
         question: [
           {
-            label: "What is the tallest mountain in North America?",
-            rightAnswer: "b",
+            label: "ما هو المقصود بـ 'الإسناد' في علم الحديث؟",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Mount Elbert" },
-              { id: "b", answer: "Denali" },
-              { id: "c", answer: "Mount Whitney" },
-              { id: "d", answer: "Mount Rainier" },
+              { id: "a", answer: "نص الحديث" },
+              { id: "b", answer: "الكتاب الذي جمع فيه الحديث" },
+              { id: "c", answer: "سلسلة الرواة الذين نقلوا الحديث" },
+              { id: "d", answer: "الموضوع الذي يتحدث عنه الحديث" },
             ],
           },
         ],
@@ -159,13 +160,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 10,
         question: [
           {
-            label: "Which plant is known as the 'lungs of the Earth'?",
-            rightAnswer: "d",
+            label: "من هو مؤلف كتاب 'سنن الترمذي'؟",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Pine Tree" },
-              { id: "b", answer: "Bamboo" },
-              { id: "c", answer: "Mangrove" },
-              { id: "d", answer: "Rainforest Trees" },
+              { id: "a", answer: "الإمام الترمذي" },
+              { id: "b", answer: "الإمام النسائي" },
+              { id: "c", answer: "الإمام مالك" },
+              { id: "d", answer: "الإمام أحمد بن حنبل" },
             ],
           },
         ],
@@ -174,13 +175,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 11,
         question: [
           {
-            label: "Which ocean is the deepest in the world?",
-            rightAnswer: "a",
+            label: "ما هو المقصود بـ 'حديث صحيح'؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Pacific Ocean" },
-              { id: "b", answer: "Atlantic Ocean" },
-              { id: "c", answer: "Indian Ocean" },
-              { id: "d", answer: "Arctic Ocean" },
+              { id: "a", answer: "الحديث الضعيف" },
+              { id: "b", answer: "الحديث المتحقق من صحة سنده ومتن" },
+              { id: "c", answer: "الحديث المرسل" },
+              { id: "d", answer: "الحديث المنقطع" },
             ],
           },
         ],
@@ -189,13 +190,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 12,
         question: [
           {
-            label: "Which animal is known for changing its color?",
+            label: "ما هي 'السنن المؤكدة' في الإسلام؟",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Octopus" },
-              { id: "b", answer: "Peacock" },
-              { id: "c", answer: "Chameleon" },
-              { id: "d", answer: "Cuttlefish" },
+              { id: "a", answer: "الأعمال التي ينبغي تجنبها" },
+              { id: "b", answer: "الأعمال التي يمكن فعلها أو تركها" },
+              { id: "c", answer: "الأعمال التي كان يقوم بها النبي بانتظام" },
+              { id: "d", answer: "الأعمال التي يجب على المسلم فعلها مرة واحدة" },
             ],
           },
         ],
@@ -204,13 +205,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 13,
         question: [
           {
-            label: "What is the most abundant gas in the Earth's atmosphere?",
-            rightAnswer: "b",
+            label: "ما هو المقصود بـ 'الحديث المرفوع'؟",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Oxygen" },
-              { id: "b", answer: "Nitrogen" },
-              { id: "c", answer: "Carbon Dioxide" },
-              { id: "d", answer: "Argon" },
+              { id: "a", answer: "الحديث الذي ينسب إلى النبي مباشرة" },
+              { id: "b", answer: "الحديث المنسوب إلى الصحابة" },
+              { id: "c", answer: "الحديث المنسوب إلى التابعين" },
+              { id: "d", answer: "الحديث الضعيف" },
             ],
           },
         ],
@@ -219,13 +220,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 14,
         question: [
           {
-            label: "Which animal is the largest land carnivore?",
+            label: "ما هو 'حديث حسن'؟",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Lion" },
-              { id: "b", answer: "Tiger" },
-              { id: "c", answer: "Grizzly Bear" },
-              { id: "d", answer: "Polar Bear" },
+              { id: "a", answer: "الحديث الضعيف" },
+              { id: "b", answer: "الحديث المرسل" },
+              { id: "c", answer: "الحديث المرفوع" },
+              { id: "d", answer: "الحديث الذي قلّت درجة صحته عن الصحيح" },
             ],
           },
         ],
@@ -234,18 +235,18 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 15,
         question: [
           {
-            label: "Which desert is the largest in the world?",
-            rightAnswer: "a",
+            label: "من هو مؤلف كتاب 'سنن أبي داود'؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Sahara Desert" },
-              { id: "b", answer: "Arabian Desert" },
-              { id: "c", answer: "Gobi Desert" },
-              { id: "d", answer: "Kalahari Desert" },
+              { id: "a", answer: "الإمام الترمذي" },
+              { id: "b", answer: "الإمام أبو داود" },
+              { id: "c", answer: "الإمام النسائي" },
+              { id: "d", answer: "الإمام مالك" },
             ],
           },
         ],
       },
-    ],
+    ]
   },
   {
     id: 1,
@@ -497,20 +498,20 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
     ],
   },
   {
-    id: 2,
-    subject: "science",
-    quiz: [
+    id:2,
+    subject:"Islamic Geography",
+    quiz:[
       {
         id: 0,
         question: [
           {
-            label: "What is the chemical symbol for water?",
-            rightAnswer: "b",
+            label: "ما هي المدينة التي ولد فيها النبي محمد؟",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "O2" },
-              { id: "b", answer: "H2O" },
-              { id: "c", answer: "CO2" },
-              { id: "d", answer: "H2" },
+              { id: "a", answer: "المدينة" },
+              { id: "b", answer: "القدس" },
+              { id: "c", answer: "مكة" },
+              { id: "d", answer: "القاهرة" },
             ],
           },
         ],
@@ -519,13 +520,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 1,
         question: [
           {
-            label: "What planet is known as the Red Planet?",
-            rightAnswer: "a",
+            label: "ما هو المعلم الإسلامي الهام في القدس؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Mars" },
-              { id: "b", answer: "Venus" },
-              { id: "c", answer: "Jupiter" },
-              { id: "d", answer: "Saturn" },
+              { id: "a", answer: "الكعبة" },
+              { id: "b", answer: "المسجد الأقصى" },
+              { id: "c", answer: "مسجد قباء" },
+              { id: "d", answer: "مسجد النبي" },
             ],
           },
         ],
@@ -534,13 +535,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 2,
         question: [
           {
-            label: "What is the powerhouse of the cell?",
-            rightAnswer: "c",
+            label: "ما هي المدينة التي هاجر إليها النبي محمد؟",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Nucleus" },
-              { id: "b", answer: "Ribosome" },
-              { id: "c", answer: "Mitochondria" },
-              { id: "d", answer: "Chloroplast" },
+              { id: "a", answer: "المدينة" },
+              { id: "b", answer: "القدس" },
+              { id: "c", answer: "مكة" },
+              { id: "d", answer: "القاهرة" },
             ],
           },
         ],
@@ -549,13 +550,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 3,
         question: [
           {
-            label: "What gas do plants absorb from the atmosphere?",
-            rightAnswer: "b",
+            label: "ما هو المعلم الإسلامي الشهير في مكة؟",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Oxygen" },
-              { id: "b", answer: "Carbon dioxide" },
-              { id: "c", answer: "Nitrogen" },
-              { id: "d", answer: "Hydrogen" },
+              { id: "a", answer: "الكعبة" },
+              { id: "b", answer: "المسجد الأقصى" },
+              { id: "c", answer: "مسجد قباء" },
+              { id: "d", answer: "مسجد النبي" },
             ],
           },
         ],
@@ -564,13 +565,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 4,
         question: [
           {
-            label: "What is the hardest natural substance on Earth?",
-            rightAnswer: "a",
+            label: "ما هي المدينة التي تقع فيها الكعبة؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Diamond" },
-              { id: "b", answer: "Gold" },
-              { id: "c", answer: "Iron" },
-              { id: "d", answer: "Silver" },
+              { id: "a", answer: "المدينة" },
+              { id: "b", answer: "مكة" },
+              { id: "c", answer: "القدس" },
+              { id: "d", answer: "القاهرة" },
             ],
           },
         ],
@@ -579,13 +580,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 5,
         question: [
           {
-            label: "What is the speed of light?",
+            label: "ما هو المسجد الأول الذي بناه المسلمون؟",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "300,000 km/h" },
-              { id: "b", answer: "150,000 km/s" },
-              { id: "c", answer: "300,000 km/s" },
-              { id: "d", answer: "150,000 km/h" },
+              { id: "a", answer: "المسجد الأقصى" },
+              { id: "b", answer: "الكعبة" },
+              { id: "c", answer: "مسجد قباء" },
+              { id: "d", answer: "مسجد النبي" },
             ],
           },
         ],
@@ -594,13 +595,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 6,
         question: [
           {
-            label: "What planet is known for its rings?",
-            rightAnswer: "b",
+            label: "ما هو المسجد الأهم في المدينة؟",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Jupiter" },
-              { id: "b", answer: "Saturn" },
-              { id: "c", answer: "Uranus" },
-              { id: "d", answer: "Neptune" },
+              { id: "a", answer: "مسجد قباء" },
+              { id: "b", answer: "المسجد الأقصى" },
+              { id: "c", answer: "الكعبة" },
+              { id: "d", answer: "مسجد النبي" },
             ],
           },
         ],
@@ -609,13 +610,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 7,
         question: [
           {
-            label: "What force keeps us on the ground?",
-            rightAnswer: "d",
+            label: "في أي مدينة يقع المسجد الأقصى؟",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Magnetism" },
-              { id: "b", answer: "Friction" },
-              { id: "c", answer: "Centripetal force" },
-              { id: "d", answer: "Gravity" },
+              { id: "a", answer: "مكة" },
+              { id: "b", answer: "المدينة" },
+              { id: "c", answer: "القدس" },
+              { id: "d", answer: "القاهرة" },
             ],
           },
         ],
@@ -624,13 +625,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 8,
         question: [
           {
-            label: "What element does 'O' represent on the periodic table?",
-            rightAnswer: "a",
+            label: "ما هو المعلم الإسلامي الهام في القاهرة؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Oxygen" },
-              { id: "b", answer: "Gold" },
-              { id: "c", answer: "Osmium" },
-              { id: "d", answer: "Oganesson" },
+              { id: "a", answer: "المسجد الأقصى" },
+              { id: "b", answer: "جامع الأزهر" },
+              { id: "c", answer: "مسجد قباء" },
+              { id: "d", answer: "مسجد النبي" },
             ],
           },
         ],
@@ -639,13 +640,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 9,
         question: [
           {
-            label: "What is the most abundant gas in the Earth's atmosphere?",
-            rightAnswer: "b",
+            label: "ما هو المعلم الإسلامي الشهير في المدينة؟",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Oxygen" },
-              { id: "b", answer: "Nitrogen" },
-              { id: "c", answer: "Carbon dioxide" },
-              { id: "d", answer: "Argon" },
+              { id: "a", answer: "الكعبة" },
+              { id: "b", answer: "المسجد الأقصى" },
+              { id: "c", answer: "مسجد قباء" },
+              { id: "d", answer: "مسجد النبي" },
             ],
           },
         ],
@@ -654,13 +655,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 10,
         question: [
           {
-            label: "What is the chemical symbol for gold?",
-            rightAnswer: "d",
+            label: "ما هو المعلم الإسلامي الهام في إسطنبول؟",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Ag" },
-              { id: "b", answer: "Fe" },
-              { id: "c", answer: "Pb" },
-              { id: "d", answer: "Au" },
+              { id: "a", answer: "المسجد الأقصى" },
+              { id: "b", answer: "جامع الأزهر" },
+              { id: "c", answer: "مسجد آيا صوفيا" },
+              { id: "d", answer: "مسجد النبي" },
             ],
           },
         ],
@@ -669,13 +670,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 11,
         question: [
           {
-            label: "What is the main gas found in the air we breathe?",
-            rightAnswer: "c",
+            label: "ما هي المدينة التي شهدت معركة بدر؟",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Hydrogen" },
-              { id: "b", answer: "Carbon dioxide" },
-              { id: "c", answer: "Nitrogen" },
-              { id: "d", answer: "Oxygen" },
+              { id: "a", answer: "المدينة" },
+              { id: "b", answer: "مكة" },
+              { id: "c", answer: "القدس" },
+              { id: "d", answer: "القاهرة" },
             ],
           },
         ],
@@ -684,13 +685,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 12,
         question: [
           {
-            label: "Which planet is closest to the sun?",
-            rightAnswer: "a",
+            label: "ما هو المعلم الإسلامي الهام في دمشق؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Mercury" },
-              { id: "b", answer: "Venus" },
-              { id: "c", answer: "Earth" },
-              { id: "d", answer: "Mars" },
+              { id: "a", answer: "المسجد الأقصى" },
+              { id: "b", answer: "المسجد الأموي" },
+              { id: "c", answer: "مسجد قباء" },
+              { id: "d", answer: "مسجد النبي" },
             ],
           },
         ],
@@ -699,13 +700,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 13,
         question: [
           {
-            label: "What is the largest organ in the human body?",
-            rightAnswer: "b",
+            label: "ما هو المسجد الذي يقع في النجف؟",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Heart" },
-              { id: "b", answer: "Skin" },
-              { id: "c", answer: "Liver" },
-              { id: "d", answer: "Lungs" },
+              { id: "a", answer: "الكعبة" },
+              { id: "b", answer: "المسجد الأقصى" },
+              { id: "c", answer: "مسجد قباء" },
+              { id: "d", answer: "مسجد الإمام علي" },
             ],
           },
         ],
@@ -714,13 +715,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 14,
         question: [
           {
-            label: "What type of galaxy is the Milky Way?",
+            label: "ما هو المعلم الإسلامي الهام في كربلاء؟",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Elliptical" },
-              { id: "b", answer: "Irregular" },
-              { id: "c", answer: "Spiral" },
-              { id: "d", answer: "Lenticular" },
+              { id: "a", answer: "المسجد الأقصى" },
+              { id: "b", answer: "جامع الأزهر" },
+              { id: "c", answer: "مرقد الإمام الحسين" },
+              { id: "d", answer: "مسجد النبي" },
             ],
           },
         ],
@@ -729,18 +730,18 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 15,
         question: [
           {
-            label: "What is the most common type of star in the Milky Way?",
-            rightAnswer: "d",
+            label: "ما هي المدينة التي شهدت صلح الحديبية؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Red giant" },
-              { id: "b", answer: "White dwarf" },
-              { id: "c", answer: "Blue giant" },
-              { id: "d", answer: "Red dwarf" },
+              { id: "a", answer: "المدينة" },
+              { id: "b", answer: "مكة" },
+              { id: "c", answer: "القدس" },
+              { id: "d", answer: "القاهرة" },
             ],
           },
         ],
       },
-    ],
+    ]
   },
   {
     id: 3,
@@ -1237,19 +1238,19 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
   },
   {
     id: 5,
-    subject: "art",
+    subject: " Islamic History",
     quiz: [
       {
         id: 0,
         question: [
           {
-            label: "Who painted the Mona Lisa?",
+            label: "ما هو اسم والد النبي محمد صلى الله عليه وسلم؟",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Leonardo da Vinci" },
-              { id: "b", answer: "Vincent van Gogh" },
-              { id: "c", answer: "Pablo Picasso" },
-              { id: "d", answer: "Claude Monet" },
+              { id: "a", answer: "عبد الله" },
+              { id: "b", answer: "عبد الرحمن" },
+              { id: "c", answer: "أبو طالب" },
+              { id: "d", answer: "علي" },
             ],
           },
         ],
@@ -1258,13 +1259,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 1,
         question: [
           {
-            label: "Which artist is famous for his 'Starry Night' painting?",
+            label: "في أي عام حدثت الهجرة النبوية من مكة إلى المدينة؟",
             rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Claude Monet" },
-              { id: "b", answer: "Vincent van Gogh" },
-              { id: "c", answer: "Salvador Dalí" },
-              { id: "d", answer: "Michelangelo" },
+              { id: "a", answer: "621 هـ" },
+              { id: "b", answer: "622 هـ" },
+              { id: "c", answer: "620 هـ" },
+              { id: "d", answer: "623 هـ" },
             ],
           },
         ],
@@ -1273,13 +1274,14 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 2,
         question: [
           {
-            label: "In which country was Pablo Picasso born?",
+            label:
+              "من كان الخليفة الأول بعد وفاة النبي محمد صلى الله عليه وسلم؟",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Italy" },
-              { id: "b", answer: "France" },
-              { id: "c", answer: "Spain" },
-              { id: "d", answer: "Portugal" },
+              { id: "a", answer: "عمر بن الخطاب" },
+              { id: "b", answer: "عثمان بن عفان" },
+              { id: "c", answer: "أبو بكر الصديق" },
+              { id: "d", answer: "علي بن أبي طالب" },
             ],
           },
         ],
@@ -1289,13 +1291,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         question: [
           {
             label:
-              "What is the art style characterized by abstract shapes and bright colors, founded by Wassily Kandinsky?",
+              "ما هو اسم معركة غزت فيها المسلمين ضد قريش في السنة الثانية للهجرة؟",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Impressionism" },
-              { id: "b", answer: "Surrealism" },
-              { id: "c", answer: "Cubism" },
-              { id: "d", answer: "Abstract Art" },
+              { id: "a", answer: "معركة مؤتة" },
+              { id: "b", answer: "معركة اليرموك" },
+              { id: "c", answer: "معركة الخندق" },
+              { id: "d", answer: "معركة بدر" },
             ],
           },
         ],
@@ -1304,13 +1306,14 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 4,
         question: [
           {
-            label: "Who painted 'The Persistence of Memory'?",
-            rightAnswer: "b",
+            label:
+              "ما هو اسم الاتفاقية التي وقعها النبي محمد صلى الله عليه وسلم مع قريش في صلح الحديبية؟",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "René Magritte" },
-              { id: "b", answer: "Salvador Dalí" },
-              { id: "c", answer: "Max Ernst" },
-              { id: "d", answer: "Giorgio de Chirico" },
+              { id: "a", answer: "صلح الحديبية" },
+              { id: "b", answer: "صلح مكة" },
+              { id: "c", answer: "معاهدة المدينة" },
+              { id: "d", answer: "معاهدة الكعبة" },
             ],
           },
         ],
@@ -1319,13 +1322,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 5,
         question: [
           {
-            label: "What is the primary medium used in fresco painting?",
-            rightAnswer: "c",
+            label: "من كان الخليفة الأموي الذي أمر ببناء قبة الصخرة في القدس؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Oil" },
-              { id: "b", answer: "Acrylic" },
-              { id: "c", answer: "Water" },
-              { id: "d", answer: "Ink" },
+              { id: "a", answer: "العباسي" },
+              { id: "b", answer: "عبد الملك بن مروان" },
+              { id: "c", answer: "المعتصم" },
+              { id: "d", answer: "الهادي" },
             ],
           },
         ],
@@ -1334,13 +1337,14 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 6,
         question: [
           {
-            label: "Who sculpted 'The Thinker'?",
-            rightAnswer: "a",
+            label:
+              "ما هو اسم المعركة التي وقعت بين المسلمين والفرس في عهد الخليفة عمر بن الخطاب؟",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Auguste Rodin" },
-              { id: "b", answer: "Donatello" },
-              { id: "c", answer: "Michelangelo" },
-              { id: "d", answer: "Henry Moore" },
+              { id: "a", answer: "معركة مؤتة" },
+              { id: "b", answer: "معركة القادسية" },
+              { id: "c", answer: "معركة اليرموك" },
+              { id: "d", answer: "معركة الجسر" },
             ],
           },
         ],
@@ -1350,13 +1354,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         question: [
           {
             label:
-              "Which artist is known for painting large-scale, close-up flowers?",
-            rightAnswer: "d",
+              "ما هو اسم العهد الذي أعطاه النبي محمد صلى الله عليه وسلم للأقباط في مصر؟",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Frida Kahlo" },
-              { id: "b", answer: "Joan Miró" },
-              { id: "c", answer: "Jackson Pollock" },
-              { id: "d", answer: "Georgia O'Keeffe" },
+              { id: "a", answer: "عهد الأقباط" },
+              { id: "b", answer: "وثيقة مكة" },
+              { id: "c", answer: "عهد الأقباط" },
+              { id: "d", answer: "وثيقة المدينة" },
             ],
           },
         ],
@@ -1365,13 +1369,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 8,
         question: [
           {
-            label: "What art movement is Claude Monet associated with?",
-            rightAnswer: "b",
+            label: "من كان أول خليفة عباسي؟",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Cubism" },
-              { id: "b", answer: "Impressionism" },
-              { id: "c", answer: "Surrealism" },
-              { id: "d", answer: "Baroque" },
+              { id: "a", answer: "أبو العباس السفاح" },
+              { id: "b", answer: "المأمون" },
+              { id: "c", answer: "المهدي" },
+              { id: "d", answer: "الهادي" },
             ],
           },
         ],
@@ -1380,13 +1384,14 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 9,
         question: [
           {
-            label: "Which of these artists is famous for his drip paintings?",
-            rightAnswer: "c",
+            label:
+              "ما هو اسم الدولة التي أسسها سليمان القانوني في القرن السادس عشر الميلادي؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Andy Warhol" },
-              { id: "b", answer: "Roy Lichtenstein" },
-              { id: "c", answer: "Jackson Pollock" },
-              { id: "d", answer: "Mark Rothko" },
+              { id: "a", answer: "الدولة الأموية" },
+              { id: "b", answer: "الدولة العثمانية" },
+              { id: "c", answer: "الدولة الفاطمية" },
+              { id: "d", answer: "الدولة العباسية" },
             ],
           },
         ],
@@ -1395,14 +1400,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 10,
         question: [
           {
-            label:
-              "What medium did Michelangelo use to create the Sistine Chapel ceiling?",
+            label: "ما هو اسم الكتاب الذي ألفه ابن خلدون حول التاريخ؟",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Fresco" },
-              { id: "b", answer: "Oil paint" },
-              { id: "c", answer: "Tempera" },
-              { id: "d", answer: "Acrylic" },
+              { id: "a", answer: "مقدمة ابن خلدون" },
+              { id: "b", answer: "الكتب الجغرافية" },
+              { id: "c", answer: "تاريخ الطبري" },
+              { id: "d", answer: "الفتوحات الإسلامية" },
             ],
           },
         ],
@@ -1411,13 +1415,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 11,
         question: [
           {
-            label: "Who painted 'Guernica'?",
-            rightAnswer: "b",
+            label: "من هو الخليفة العباسي الذي أمر ببناء بغداد؟",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Henri Matisse" },
-              { id: "b", answer: "Pablo Picasso" },
-              { id: "c", answer: "Salvador Dalí" },
-              { id: "d", answer: "Joan Miró" },
+              { id: "a", answer: "المعتصم" },
+              { id: "b", answer: "المأمون" },
+              { id: "c", answer: "أبو جعفر المنصور" },
+              { id: "d", answer: "الهادي" },
             ],
           },
         ],
@@ -1426,13 +1430,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 12,
         question: [
           {
-            label: "Which artist is known for his surreal, melting clocks?",
-            rightAnswer: "c",
+            label: "ما هي المدينة التي كانت عاصمة الدولة الأموية؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "René Magritte" },
-              { id: "b", answer: "Max Ernst" },
-              { id: "c", answer: "Salvador Dalí" },
-              { id: "d", answer: "Giorgio de Chirico" },
+              { id: "a", answer: "القدس" },
+              { id: "b", answer: "دمشق" },
+              { id: "c", answer: "بغداد" },
+              { id: "d", answer: "القاهرة" },
             ],
           },
         ],
@@ -1441,13 +1445,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 13,
         question: [
           {
-            label: "In which museum is the 'Mona Lisa' displayed?",
-            rightAnswer: "a",
+            label: "ما هو اسم الملك الفاطمي الذي أمر ببناء جامع الأزهر؟",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "The Louvre" },
-              { id: "b", answer: "The British Museum" },
-              { id: "c", answer: "The Prado" },
-              { id: "d", answer: "The Uffizi" },
+              { id: "a", answer: "الحاكم بأمر الله" },
+              { id: "b", answer: "المهدي" },
+              { id: "c", answer: "الظاهر" },
+              { id: "d", answer: "المعز لدين الله" },
             ],
           },
         ],
@@ -1457,13 +1461,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         question: [
           {
             label:
-              "What is the primary subject of Edvard Munch's famous painting 'The Scream'?",
-            rightAnswer: "d",
+              "ما هو اسم المعركة التي انتصر فيها المسلمون على الفرس في عهد الخليفة عمر بن الخطاب؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "A landscape" },
-              { id: "b", answer: "A crowd" },
-              { id: "c", answer: "A dance" },
-              { id: "d", answer: "A figure with a haunting expression" },
+              { id: "a", answer: "معركة مؤتة" },
+              { id: "b", answer: "معركة القادسية" },
+              { id: "c", answer: "معركة الخندق" },
+              { id: "d", answer: "معركة بدر" },
             ],
           },
         ],
@@ -1472,13 +1476,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 15,
         question: [
           {
-            label: "Which artist is known for co-founding the Cubist movement?",
-            rightAnswer: "b",
+            label: "من هو مؤسس الدولة الأموية؟",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Henri Matisse" },
-              { id: "b", answer: "Pablo Picasso" },
-              { id: "c", answer: "Salvador Dalí" },
-              { id: "d", answer: "Georges Seurat" },
+              { id: "a", answer: "عبد الملك بن مروان" },
+              { id: "b", answer: "العباس بن عبد المطلب" },
+              { id: "c", answer: "مروان بن الحكم" },
+              { id: "d", answer: "عبد الله بن الزبير" },
             ],
           },
         ],
@@ -1985,20 +1989,20 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
     ],
   },
   {
-    id: 8,
-    subject: "sports",
-    quiz: [
+    id:8,
+    subject:"Quranic Knowledge",
+    quiz:[
       {
         id: 0,
         question: [
           {
-            label: "Which country won the FIFA World Cup in 2018?",
+            label: "ما هي السورة التي تُعتبر قلب القرآن؟",
             rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Brazil" },
-              { id: "b", answer: "France" },
-              { id: "c", answer: "Germany" },
-              { id: "d", answer: "Argentina" },
+              { id: "a", answer: "سورة الفاتحة" },
+              { id: "b", answer: "سورة يس" },
+              { id: "c", answer: "سورة البقرة" },
+              { id: "d", answer: "سورة الكهف" },
             ],
           },
         ],
@@ -2007,13 +2011,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 1,
         question: [
           {
-            label: "How many players are on a basketball team?",
-            rightAnswer: "d",
+            label: "ما هي السورة التي تحتوي على أطول آية في القرآن؟",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "5" },
-              { id: "b", answer: "6" },
-              { id: "c", answer: "7" },
-              { id: "d", answer: "5" },
+              { id: "a", answer: "سورة البقرة" },
+              { id: "b", answer: "سورة آل عمران" },
+              { id: "c", answer: "سورة النساء" },
+              { id: "d", answer: "سورة المائدة" },
             ],
           },
         ],
@@ -2022,13 +2026,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 2,
         question: [
           {
-            label: "Which sport is known as the 'king of sports'?",
-            rightAnswer: "a",
+            label: "ما هي السورة التي يُطلق عليها اسم 'سورة الشفاعة'؟",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Soccer" },
-              { id: "b", answer: "Basketball" },
-              { id: "c", answer: "Tennis" },
-              { id: "d", answer: "Cricket" },
+              { id: "a", answer: "سورة الفلق" },
+              { id: "b", answer: "سورة الإخلاص" },
+              { id: "c", answer: "سورة الكافرون" },
+              { id: "d", answer: "سورة النبأ" },
             ],
           },
         ],
@@ -2037,14 +2041,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 3,
         question: [
           {
-            label:
-              "Who holds the record for the most goals scored in World Cup history?",
-            rightAnswer: "d",
+            label: "ما هي السورة التي تُسمى بـ'سورة الصمد'؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Cristiano Ronaldo" },
-              { id: "b", answer: "Pelé" },
-              { id: "c", answer: "Maradona" },
-              { id: "d", answer: "Miroslav Klose" },
+              { id: "a", answer: "سورة الفاتحة" },
+              { id: "b", answer: "سورة الإخلاص" },
+              { id: "c", answer: "سورة الرحمن" },
+              { id: "d", answer: "سورة الفلق" },
             ],
           },
         ],
@@ -2053,14 +2056,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 4,
         question: [
           {
-            label:
-              "What is the maximum score in a single game of ten-pin bowling?",
-            rightAnswer: "b",
+            label: "من هو النبي الذي ذُكر اسمه في سورة مريم؟",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "200" },
-              { id: "b", answer: "300" },
-              { id: "c", answer: "250" },
-              { id: "d", answer: "400" },
+              { id: "a", answer: "عيسى" },
+              { id: "b", answer: "موسى" },
+              { id: "c", answer: "محمد" },
+              { id: "d", answer: "إبراهيم" },
             ],
           },
         ],
@@ -2069,13 +2071,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 5,
         question: [
           {
-            label: "Which country is famous for originating the sport of Judo?",
-            rightAnswer: "a",
+            label: "ما هي السورة التي تحتوي على آية الكرسي؟",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Japan" },
-              { id: "b", answer: "China" },
-              { id: "c", answer: "Korea" },
-              { id: "d", answer: "Thailand" },
+              { id: "a", answer: "سورة الرحمن" },
+              { id: "b", answer: "سورة الإخلاص" },
+              { id: "c", answer: "سورة البقرة" },
+              { id: "d", answer: "سورة النصر" },
             ],
           },
         ],
@@ -2084,13 +2086,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 6,
         question: [
           {
-            label: "In which sport would you perform a slam dunk?",
-            rightAnswer: "b",
+            label: "ما هي السورة التي تُسمى بـ'سورة الحج'؟",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Soccer" },
-              { id: "b", answer: "Basketball" },
-              { id: "c", answer: "Volleyball" },
-              { id: "d", answer: "Baseball" },
+              { id: "a", answer: "سورة القمر" },
+              { id: "b", answer: "سورة النبأ" },
+              { id: "c", answer: "سورة الروم" },
+              { id: "d", answer: "سورة الحج" },
             ],
           },
         ],
@@ -2099,13 +2101,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 7,
         question: [
           {
-            label: "How many rounds are there in a standard boxing match?",
-            rightAnswer: "a",
+            label: "ما هي السورة التي تُعنى بحياة الإنسان في الدنيا والآخرة؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "12" },
-              { id: "b", answer: "10" },
-              { id: "c", answer: "15" },
-              { id: "d", answer: "8" },
+              { id: "a", answer: "سورة الفاتحة" },
+              { id: "b", answer: "سورة الكهف" },
+              { id: "c", answer: "سورة السجدة" },
+              { id: "d", answer: "سورة الأنعام" },
             ],
           },
         ],
@@ -2114,13 +2116,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 8,
         question: [
           {
-            label: "Which tennis Grand Slam is played on grass?",
+            label: "ما هو اسم السورة التي تحتوي على وصف للمؤمنين في القرآن؟",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Australian Open" },
-              { id: "b", answer: "French Open" },
-              { id: "c", answer: "US Open" },
-              { id: "d", answer: "Wimbledon" },
+              { id: "a", answer: "سورة الفلق" },
+              { id: "b", answer: "سورة الإخلاص" },
+              { id: "c", answer: "سورة الكافرون" },
+              { id: "d", answer: "سورة المؤمنون" },
             ],
           },
         ],
@@ -2129,14 +2131,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 9,
         question: [
           {
-            label:
-              "Which country won the most Olympic gold medals in the 2008 Beijing Games?",
+            label: "ما هي السورة التي تبدأ بـ'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ'؟",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "China" },
-              { id: "b", answer: "USA" },
-              { id: "c", answer: "Russia" },
-              { id: "d", answer: "UK" },
+              { id: "a", answer: "سورة الفاتحة" },
+              { id: "b", answer: "سورة الكهف" },
+              { id: "c", answer: "سورة النصر" },
+              { id: "d", answer: "سورة الإخلاص" },
             ],
           },
         ],
@@ -2145,13 +2146,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 10,
         question: [
           {
-            label: "In which sport is the term 'hole-in-one' used?",
-            rightAnswer: "c",
+            label: "من هو النبي الذي ذُكر اسمه في سورة البقرة؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Tennis" },
-              { id: "b", answer: "Soccer" },
-              { id: "c", answer: "Golf" },
-              { id: "d", answer: "Hockey" },
+              { id: "a", answer: "عيسى" },
+              { id: "b", answer: "موسى" },
+              { id: "c", answer: "محمد" },
+              { id: "d", answer: "إبراهيم" },
             ],
           },
         ],
@@ -2160,13 +2161,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 11,
         question: [
           {
-            label: "Which NFL team has won the most Super Bowls?",
+            label: "ما هي السورة التي تُعدّ أطول سورة في القرآن؟",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "New England Patriots" },
-              { id: "b", answer: "Dallas Cowboys" },
-              { id: "c", answer: "Pittsburgh Steelers" },
-              { id: "d", answer: "San Francisco 49ers" },
+              { id: "a", answer: "سورة البقرة" },
+              { id: "b", answer: "سورة آل عمران" },
+              { id: "c", answer: "سورة النساء" },
+              { id: "d", answer: "سورة المائدة" },
             ],
           },
         ],
@@ -2175,13 +2176,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 12,
         question: [
           {
-            label: "What is the standard distance of a marathon race?",
+            label: "ما هي السورة التي تبدأ بـ'قُلْ هُوَ ٱللَّهُ أَحَدٌ'؟",
             rightAnswer: "b",
             answers: [
-              { id: "a", answer: "20 miles" },
-              { id: "b", answer: "26.2 miles" },
-              { id: "c", answer: "30 miles" },
-              { id: "d", answer: "15 miles" },
+              { id: "a", answer: "سورة الفلق" },
+              { id: "b", answer: "سورة الإخلاص" },
+              { id: "c", answer: "سورة الناس" },
+              { id: "d", answer: "سورة الكافرون" },
             ],
           },
         ],
@@ -2190,13 +2191,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 13,
         question: [
           {
-            label: "Which sport uses the term 'hat-trick'?",
+            label: "ما هي السورة التي تُعنى بأحداث معركة بدر؟",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Tennis" },
-              { id: "b", answer: "Golf" },
-              { id: "c", answer: "Hockey" },
-              { id: "d", answer: "Baseball" },
+              { id: "a", answer: "سورة المائدة" },
+              { id: "b", answer: "سورة آل عمران" },
+              { id: "c", answer: "سورة الأنفال" },
+              { id: "d", answer: "سورة البراءة" },
             ],
           },
         ],
@@ -2205,14 +2206,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 14,
         question: [
           {
-            label:
-              "Which swimmer holds the record for the most Olympic gold medals?",
+            label: "ما هي السورة التي تتحدث عن النعيم والجحيم؟",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Ian Thorpe" },
-              { id: "b", answer: "Michael Phelps" },
-              { id: "c", answer: "Mark Spitz" },
-              { id: "d", answer: "Ryan Lochte" },
+              { id: "a", answer: "سورة الفتح" },
+              { id: "b", answer: "سورة الفجر" },
+              { id: "c", answer: "سورة الإسراء" },
+              { id: "d", answer: "سورة الحاقة" },
             ],
           },
         ],
@@ -2221,18 +2221,18 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 15,
         question: [
           {
-            label: "What is the term for a soccer game that ends in a tie?",
+            label: "ما هو اسم السورة التي تتحدث عن خلق الإنسان؟",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Draw" },
-              { id: "b", answer: "Overtime" },
-              { id: "c", answer: "Penalty Shootout" },
-              { id: "d", answer: "Extra Time" },
+              { id: "a", answer: "سورة الإنسان" },
+              { id: "b", answer: "سورة النبأ" },
+              { id: "c", answer: "سورة الكهف" },
+              { id: "d", answer: "سورة البينة" },
             ],
           },
         ],
       },
-    ],
+    ]
   },
   {
     id: 9,
@@ -2735,19 +2735,19 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
   },
   {
     id: 11,
-    subject: "philosophy",
+    subject: "Prophets and Messengers",
     quiz: [
       {
         id: 0,
         question: [
           {
-            label: "Who is considered the father of Western philosophy?",
+            label: "من كان أول نبي في الإسلام؟",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Socrates" },
-              { id: "b", answer: "Plato" },
-              { id: "c", answer: "Aristotle" },
-              { id: "d", answer: "Descartes" },
+              { id: "a", answer: "آدم" },
+              { id: "b", answer: "نوح" },
+              { id: "c", answer: "إبراهيم" },
+              { id: "d", answer: "موسى" },
             ],
           },
         ],
@@ -2756,13 +2756,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 1,
         question: [
           {
-            label: "Which philosopher wrote 'The Republic'?",
+            label: "ما هو اسم النبي الذي بنى الكعبة؟",
             rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Aristotle" },
-              { id: "b", answer: "Plato" },
-              { id: "c", answer: "Socrates" },
-              { id: "d", answer: "Nietzsche" },
+              { id: "a", answer: "موسى" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "نوح" },
+              { id: "d", answer: "عيسى" },
             ],
           },
         ],
@@ -2771,13 +2771,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 2,
         question: [
           {
-            label: "What is the main focus of existentialism?",
+            label: "من هو النبي الذي أُرسل إلى بني إسرائيل بعد موسى؟",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Objective reality" },
-              { id: "b", answer: "Empirical science" },
-              { id: "c", answer: "Individual freedom and choice" },
-              { id: "d", answer: "Social justice" },
+              { id: "a", answer: "إبراهيم" },
+              { id: "b", answer: "محمد" },
+              { id: "c", answer: "عيسى" },
+              { id: "d", answer: "إدريس" },
             ],
           },
         ],
@@ -2786,13 +2786,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 3,
         question: [
           {
-            label: "Who is the author of 'Critique of Pure Reason'?",
+            label: "ما هو اسم النبي الذي ابتلعه الحوت؟",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Hume" },
-              { id: "b", answer: "Kant" },
-              { id: "c", answer: "Hegel" },
-              { id: "d", answer: "Descartes" },
+              { id: "a", answer: "إبراهيم" },
+              { id: "b", answer: "محمد" },
+              { id: "c", answer: "عيسى" },
+              { id: "d", answer: "يونس" },
             ],
           },
         ],
@@ -2801,16 +2801,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 4,
         question: [
           {
-            label: "What is 'tabula rasa' in philosophy?",
+            label: "ما هي معجزة النبي موسى عندما ذهب إلى فرعون؟",
             rightAnswer: "a",
             answers: [
-              {
-                id: "a",
-                answer: "The idea that the mind is a blank slate at birth",
-              },
-              { id: "b", answer: "A form of logical reasoning" },
-              { id: "c", answer: "A theory of ethics" },
-              { id: "d", answer: "A political theory" },
+              { id: "a", answer: "عصا تحولت إلى ثعبان" },
+              { id: "b", answer: "شفاء المرضى" },
+              { id: "c", answer: "تقسيم البحر" },
+              { id: "d", answer: "إنزال المائدة" },
             ],
           },
         ],
@@ -2820,13 +2817,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         question: [
           {
             label:
-              "Which philosopher is known for the statement 'I think, therefore I am'?",
-            rightAnswer: "c",
+              "من هو النبي الذي أعطاه الله ملكاً لم يكن لأحد قبله ولا بعده؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Nietzsche" },
-              { id: "b", answer: "Hume" },
-              { id: "c", answer: "Descartes" },
-              { id: "d", answer: "Locke" },
+              { id: "a", answer: "عيسى" },
+              { id: "b", answer: "سليمان" },
+              { id: "c", answer: "محمد" },
+              { id: "d", answer: "إبراهيم" },
             ],
           },
         ],
@@ -2835,16 +2832,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 6,
         question: [
           {
-            label: "What does 'utilitarianism' advocate?",
+            label: "ما اسم النبي الذي سار على الماء؟",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Maximizing individual rights" },
-              { id: "b", answer: "Religious adherence" },
-              { id: "c", answer: "The pursuit of personal happiness" },
-              {
-                id: "d",
-                answer: "The greatest happiness for the greatest number",
-              },
+              { id: "a", answer: "موسى" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "نوح" },
+              { id: "d", answer: "عيسى" },
             ],
           },
         ],
@@ -2853,13 +2847,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 7,
         question: [
           {
-            label: "Who is known for the concept of 'the will to power'?",
+            label: "ما اسم النبي الذي كان له صديق من الجن؟",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Nietzsche" },
-              { id: "b", answer: "Hegel" },
-              { id: "c", answer: "Kant" },
-              { id: "d", answer: "Sartre" },
+              { id: "a", answer: "سليمان" },
+              { id: "b", answer: "محمد" },
+              { id: "c", answer: "عيسى" },
+              { id: "d", answer: "إبراهيم" },
             ],
           },
         ],
@@ -2868,13 +2862,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 8,
         question: [
           {
-            label: "Which philosopher wrote 'Being and Time'?",
-            rightAnswer: "b",
+            label: "من هو النبي الذي رُفِع إلى السماء؟",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Nietzsche" },
-              { id: "b", answer: "Heidegger" },
-              { id: "c", answer: "Hume" },
-              { id: "d", answer: "Berkeley" },
+              { id: "a", answer: "موسى" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "عيسى" },
+              { id: "d", answer: "نوح" },
             ],
           },
         ],
@@ -2883,17 +2877,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 9,
         question: [
           {
-            label: "What is 'empiricism'?",
-            rightAnswer: "a",
+            label: "من هو النبي الذي دعا إلى التوحيد وأُحرق بالنار؟",
+            rightAnswer: "b",
             answers: [
-              {
-                id: "a",
-                answer:
-                  "The theory that knowledge comes from sensory experience",
-              },
-              { id: "b", answer: "The belief in innate ideas" },
-              { id: "c", answer: "A form of ethical reasoning" },
-              { id: "d", answer: "A political philosophy" },
+              { id: "a", answer: "موسى" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "عيسى" },
+              { id: "d", answer: "محمد" },
             ],
           },
         ],
@@ -2902,14 +2892,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 10,
         question: [
           {
-            label:
-              "Which philosopher is known for his work 'The Social Contract'?",
+            label: "ما هو اسم النبي الذي فُتن بملك مصر وكان له قصص مع الملكة؟",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Kant" },
-              { id: "b", answer: "Hegel" },
-              { id: "c", answer: "Hume" },
-              { id: "d", answer: "Rousseau" },
+              { id: "a", answer: "سليمان" },
+              { id: "b", answer: "عيسى" },
+              { id: "c", answer: "إبراهيم" },
+              { id: "d", answer: "يوسف" },
             ],
           },
         ],
@@ -2918,20 +2907,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 11,
         question: [
           {
-            label: "What does 'skepticism' refer to in philosophy?",
+            label: "ما اسم النبي الذي استمرت رسالته حتى يوم القيامة؟",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "The belief in absolute truths" },
-              {
-                id: "b",
-                answer: "The pursuit of knowledge through empirical methods",
-              },
-              {
-                id: "c",
-                answer:
-                  "The questioning of the possibility of certainty in knowledge",
-              },
-              { id: "d", answer: "The acceptance of metaphysical claims" },
+              { id: "a", answer: "موسى" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "محمد" },
+              { id: "d", answer: "عيسى" },
             ],
           },
         ],
@@ -2940,13 +2922,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 12,
         question: [
           {
-            label: "Who wrote 'Beyond Good and Evil'?",
-            rightAnswer: "a",
+            label: "من هو النبي الذي ذكر في القرآن أنه أسس مدينة؟",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Nietzsche" },
-              { id: "b", answer: "Hume" },
-              { id: "c", answer: "Kant" },
-              { id: "d", answer: "Sartre" },
+              { id: "a", answer: "سليمان" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "موسى" },
+              { id: "d", answer: "محمد" },
             ],
           },
         ],
@@ -2955,24 +2937,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 13,
         question: [
           {
-            label: "What is 'rationalism'?",
-            rightAnswer: "b",
+            label: "ما اسم النبي الذي كان يعرف بلقب 'الخليل'؟",
+            rightAnswer: "a",
             answers: [
-              {
-                id: "a",
-                answer:
-                  "The belief in empirical evidence as the source of knowledge",
-              },
-              {
-                id: "b",
-                answer:
-                  "The belief that reason is the primary source of knowledge",
-              },
-              {
-                id: "c",
-                answer: "The belief in the importance of sensory experience",
-              },
-              { id: "d", answer: "A form of social philosophy" },
+              { id: "a", answer: "إبراهيم" },
+              { id: "b", answer: "موسى" },
+              { id: "c", answer: "سليمان" },
+              { id: "d", answer: "محمد" },
             ],
           },
         ],
@@ -2981,14 +2952,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 14,
         question: [
           {
-            label:
-              "Which philosopher is known for 'A Treatise of Human Nature'?",
+            label: "ما هو اسم النبي الذي كان له جدار من النار؟",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Locke" },
-              { id: "b", answer: "Hume" },
-              { id: "c", answer: "Berkeley" },
-              { id: "d", answer: "Kant" },
+              { id: "a", answer: "عيسى" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "نوح" },
+              { id: "d", answer: "موسى" },
             ],
           },
         ],
@@ -2997,17 +2967,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 15,
         question: [
           {
-            label: "What does 'dialectic' refer to in philosophy?",
+            label: "من هو النبي الذي عُرف بمواجهة جيوش الكفار باستخدام طوفان؟",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "A type of political philosophy" },
-              { id: "b", answer: "The belief in empiricism" },
-              {
-                id: "c",
-                answer:
-                  "A method of argument involving contradiction and reconciliation",
-              },
-              { id: "d", answer: "A form of ethical reasoning" },
+              { id: "a", answer: "سليمان" },
+              { id: "b", answer: "محمد" },
+              { id: "c", answer: "نوح" },
+              { id: "d", answer: "موسى" },
             ],
           },
         ],
@@ -3766,19 +3732,19 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
   },
   {
     id: 15,
-    subject: "islamic",
+    subject: "nature",
     quiz: [
       {
         id: 0,
         question: [
           {
-            label: "What is the first month of the Islamic calendar?",
+            label: "What is the largest mammal in the world?",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Muharram" },
-              { id: "b", answer: "Ramadan" },
-              { id: "c", answer: "Shawwal" },
-              { id: "d", answer: "Safar" },
+              { id: "a", answer: "Blue Whale" },
+              { id: "b", answer: "Elephant" },
+              { id: "c", answer: "Giraffe" },
+              { id: "d", answer: "Rhino" },
             ],
           },
         ],
@@ -3787,13 +3753,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 1,
         question: [
           {
-            label: "Who was the Prophet Muhammad's first wife?",
+            label: "What is the tallest tree in the world?",
             rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Aisha" },
-              { id: "b", answer: "Khadijah" },
-              { id: "c", answer: "Hafsa" },
-              { id: "d", answer: "Zainab" },
+              { id: "a", answer: "Baobab" },
+              { id: "b", answer: "Redwood" },
+              { id: "c", answer: "Douglas Fir" },
+              { id: "d", answer: "Sequoia" },
             ],
           },
         ],
@@ -3802,13 +3768,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 2,
         question: [
           {
-            label: "In which city was the Prophet Muhammad born?",
+            label: "What is the largest rainforest in the world?",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Medina" },
-              { id: "b", answer: "Jerusalem" },
-              { id: "c", answer: "Mecca" },
-              { id: "d", answer: "Cairo" },
+              { id: "a", answer: "Congo Rainforest" },
+              { id: "b", answer: "Daintree Rainforest" },
+              { id: "c", answer: "Amazon Rainforest" },
+              { id: "d", answer: "Southeast Asian Rainforest" },
             ],
           },
         ],
@@ -3817,13 +3783,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 3,
         question: [
           {
-            label: "What is the name of the holy book of Islam?",
+            label: "Which bird is known for its impressive mimicry skills?",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Bible" },
-              { id: "b", answer: "Torah" },
-              { id: "c", answer: "Gita" },
-              { id: "d", answer: "Quran" },
+              { id: "a", answer: "Canary" },
+              { id: "b", answer: "Parrot" },
+              { id: "c", answer: "Nightingale" },
+              { id: "d", answer: "Lyrebird" },
             ],
           },
         ],
@@ -3832,13 +3798,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 4,
         question: [
           {
-            label: "How many times a day are Muslims required to pray?",
-            rightAnswer: "a",
+            label: "What is the fastest land animal?",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Five" },
-              { id: "b", answer: "Three" },
-              { id: "c", answer: "Seven" },
-              { id: "d", answer: "Two" },
+              { id: "a", answer: "Lion" },
+              { id: "b", answer: "Cheetah" },
+              { id: "c", answer: "Gazelle" },
+              { id: "d", answer: "Horse" },
             ],
           },
         ],
@@ -3847,13 +3813,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 5,
         question: [
           {
-            label: "Which prophet is known for building the Kaaba?",
-            rightAnswer: "b",
+            label: "What is the most poisonous animal in the world?",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Moses" },
-              { id: "b", answer: "Ibrahim" },
-              { id: "c", answer: "Noah" },
-              { id: "d", answer: "Jesus" },
+              { id: "a", answer: "King Cobra" },
+              { id: "b", answer: "Stonefish" },
+              { id: "c", answer: "Box Jellyfish" },
+              { id: "d", answer: "Poison Dart Frog" },
             ],
           },
         ],
@@ -3862,14 +3828,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 6,
         question: [
           {
-            label:
-              "What is the name of the Islamic festival at the end of Ramadan?",
-            rightAnswer: "c",
+            label: "What type of animal is a Komodo dragon?",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Eid al-Adha" },
-              { id: "b", answer: "Eid al-Ghadeer" },
-              { id: "c", answer: "Eid al-Fitr" },
-              { id: "d", answer: "Eid al-Mawlid" },
+              { id: "a", answer: "Lizard" },
+              { id: "b", answer: "Snake" },
+              { id: "c", answer: "Crocodile" },
+              { id: "d", answer: "Turtle" },
             ],
           },
         ],
@@ -3878,13 +3843,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 7,
         question: [
           {
-            label: "Which angel delivered the Quran to Prophet Muhammad?",
-            rightAnswer: "a",
+            label: "Which is the only flying mammal?",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Gabriel" },
-              { id: "b", answer: "Michael" },
-              { id: "c", answer: "Raphael" },
-              { id: "d", answer: "Azrael" },
+              { id: "a", answer: "Flying Squirrel" },
+              { id: "b", answer: "Gliding Lemur" },
+              { id: "c", answer: "Pterodactyl" },
+              { id: "d", answer: "Bat" },
             ],
           },
         ],
@@ -3893,14 +3858,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 8,
         question: [
           {
-            label:
-              "What is the name of the pilgrimage that Muslims undertake to Mecca?",
-            rightAnswer: "b",
+            label: "Which animal has the longest lifespan?",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Umrah" },
-              { id: "b", answer: "Hajj" },
-              { id: "c", answer: "Sadaqah" },
-              { id: "d", answer: "Zakat" },
+              { id: "a", answer: "Elephant" },
+              { id: "b", answer: "Blue Whale" },
+              { id: "c", answer: "Greenland Shark" },
+              { id: "d", answer: "Galapagos Tortoise" },
             ],
           },
         ],
@@ -3909,14 +3873,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 9,
         question: [
           {
-            label:
-              "Which day of the week is considered the holiest day for Muslims?",
-            rightAnswer: "d",
+            label: "What is the tallest mountain in North America?",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Monday" },
-              { id: "b", answer: "Friday" },
-              { id: "c", answer: "Saturday" },
-              { id: "d", answer: "Sunday" },
+              { id: "a", answer: "Mount Elbert" },
+              { id: "b", answer: "Denali" },
+              { id: "c", answer: "Mount Whitney" },
+              { id: "d", answer: "Mount Rainier" },
             ],
           },
         ],
@@ -3925,13 +3888,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 10,
         question: [
           {
-            label: "What is the term for the charity given to those in need?",
-            rightAnswer: "c",
+            label: "Which plant is known as the 'lungs of the Earth'?",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Hajj" },
-              { id: "b", answer: "Sadaqah" },
-              { id: "c", answer: "Zakat" },
-              { id: "d", answer: "Sawm" },
+              { id: "a", answer: "Pine Tree" },
+              { id: "b", answer: "Bamboo" },
+              { id: "c", answer: "Mangrove" },
+              { id: "d", answer: "Rainforest Trees" },
             ],
           },
         ],
@@ -3940,13 +3903,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 11,
         question: [
           {
-            label: "Which prophet is known for his patience and endurance?",
-            rightAnswer: "b",
+            label: "Which ocean is the deepest in the world?",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Moses" },
-              { id: "b", answer: "Job" },
-              { id: "c", answer: "Isaac" },
-              { id: "d", answer: "David" },
+              { id: "a", answer: "Pacific Ocean" },
+              { id: "b", answer: "Atlantic Ocean" },
+              { id: "c", answer: "Indian Ocean" },
+              { id: "d", answer: "Arctic Ocean" },
             ],
           },
         ],
@@ -3955,14 +3918,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 12,
         question: [
           {
-            label:
-              "What is the Islamic term for fasting during the month of Ramadan?",
-            rightAnswer: "d",
+            label: "Which animal is known for changing its color?",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "Hajj" },
-              { id: "b", answer: "Zakat" },
-              { id: "c", answer: "Sadaqah" },
-              { id: "d", answer: "Sawm" },
+              { id: "a", answer: "Octopus" },
+              { id: "b", answer: "Peacock" },
+              { id: "c", answer: "Chameleon" },
+              { id: "d", answer: "Cuttlefish" },
             ],
           },
         ],
@@ -3971,14 +3933,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 13,
         question: [
           {
-            label:
-              "What is the name of the Islamic prayer performed before dawn?",
-            rightAnswer: "a",
+            label: "What is the most abundant gas in the Earth's atmosphere?",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "Fajr" },
-              { id: "b", answer: "Dhuhr" },
-              { id: "c", answer: "Asr" },
-              { id: "d", answer: "Maghrib" },
+              { id: "a", answer: "Oxygen" },
+              { id: "b", answer: "Nitrogen" },
+              { id: "c", answer: "Carbon Dioxide" },
+              { id: "d", answer: "Argon" },
             ],
           },
         ],
@@ -3987,13 +3948,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 14,
         question: [
           {
-            label: "Who is considered the final prophet in Islam?",
-            rightAnswer: "c",
+            label: "Which animal is the largest land carnivore?",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "Moses" },
-              { id: "b", answer: "Jesus" },
-              { id: "c", answer: "Muhammad" },
-              { id: "d", answer: "Isaiah" },
+              { id: "a", answer: "Lion" },
+              { id: "b", answer: "Tiger" },
+              { id: "c", answer: "Grizzly Bear" },
+              { id: "d", answer: "Polar Bear" },
             ],
           },
         ],
@@ -4002,13 +3963,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 15,
         question: [
           {
-            label: "What is the term for the Islamic declaration of faith?",
-            rightAnswer: "b",
+            label: "Which desert is the largest in the world?",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "Sawm" },
-              { id: "b", answer: "Shahada" },
-              { id: "c", answer: "Hajj" },
-              { id: "d", answer: "Zakat" },
+              { id: "a", answer: "Sahara Desert" },
+              { id: "b", answer: "Arabian Desert" },
+              { id: "c", answer: "Gobi Desert" },
+              { id: "d", answer: "Kalahari Desert" },
             ],
           },
         ],
@@ -4017,19 +3978,19 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
   },
   {
     id: 16,
-    subject: "Prophets and Messengers",
+    subject: "philosophy",
     quiz: [
       {
         id: 0,
         question: [
           {
-            label: "من كان أول نبي في الإسلام؟",
+            label: "Who is considered the father of Western philosophy?",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "آدم" },
-              { id: "b", answer: "نوح" },
-              { id: "c", answer: "إبراهيم" },
-              { id: "d", answer: "موسى" },
+              { id: "a", answer: "Socrates" },
+              { id: "b", answer: "Plato" },
+              { id: "c", answer: "Aristotle" },
+              { id: "d", answer: "Descartes" },
             ],
           },
         ],
@@ -4038,13 +3999,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 1,
         question: [
           {
-            label: "ما هو اسم النبي الذي بنى الكعبة؟",
+            label: "Which philosopher wrote 'The Republic'?",
             rightAnswer: "b",
             answers: [
-              { id: "a", answer: "موسى" },
-              { id: "b", answer: "إبراهيم" },
-              { id: "c", answer: "نوح" },
-              { id: "d", answer: "عيسى" },
+              { id: "a", answer: "Aristotle" },
+              { id: "b", answer: "Plato" },
+              { id: "c", answer: "Socrates" },
+              { id: "d", answer: "Nietzsche" },
             ],
           },
         ],
@@ -4053,13 +4014,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 2,
         question: [
           {
-            label: "من هو النبي الذي أُرسل إلى بني إسرائيل بعد موسى؟",
+            label: "What is the main focus of existentialism?",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "إبراهيم" },
-              { id: "b", answer: "محمد" },
-              { id: "c", answer: "عيسى" },
-              { id: "d", answer: "إدريس" },
+              { id: "a", answer: "Objective reality" },
+              { id: "b", answer: "Empirical science" },
+              { id: "c", answer: "Individual freedom and choice" },
+              { id: "d", answer: "Social justice" },
             ],
           },
         ],
@@ -4068,13 +4029,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 3,
         question: [
           {
-            label: "ما هو اسم النبي الذي ابتلعه الحوت؟",
+            label: "Who is the author of 'Critique of Pure Reason'?",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "إبراهيم" },
-              { id: "b", answer: "محمد" },
-              { id: "c", answer: "عيسى" },
-              { id: "d", answer: "يونس" },
+              { id: "a", answer: "Hume" },
+              { id: "b", answer: "Kant" },
+              { id: "c", answer: "Hegel" },
+              { id: "d", answer: "Descartes" },
             ],
           },
         ],
@@ -4083,13 +4044,16 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 4,
         question: [
           {
-            label: "ما هي معجزة النبي موسى عندما ذهب إلى فرعون؟",
+            label: "What is 'tabula rasa' in philosophy?",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "عصا تحولت إلى ثعبان" },
-              { id: "b", answer: "شفاء المرضى" },
-              { id: "c", answer: "تقسيم البحر" },
-              { id: "d", answer: "إنزال المائدة" },
+              {
+                id: "a",
+                answer: "The idea that the mind is a blank slate at birth",
+              },
+              { id: "b", answer: "A form of logical reasoning" },
+              { id: "c", answer: "A theory of ethics" },
+              { id: "d", answer: "A political theory" },
             ],
           },
         ],
@@ -4099,13 +4063,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         question: [
           {
             label:
-              "من هو النبي الذي أعطاه الله ملكاً لم يكن لأحد قبله ولا بعده؟",
-            rightAnswer: "b",
+              "Which philosopher is known for the statement 'I think, therefore I am'?",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "عيسى" },
-              { id: "b", answer: "سليمان" },
-              { id: "c", answer: "محمد" },
-              { id: "d", answer: "إبراهيم" },
+              { id: "a", answer: "Nietzsche" },
+              { id: "b", answer: "Hume" },
+              { id: "c", answer: "Descartes" },
+              { id: "d", answer: "Locke" },
             ],
           },
         ],
@@ -4114,13 +4078,16 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 6,
         question: [
           {
-            label: "ما اسم النبي الذي سار على الماء؟",
+            label: "What does 'utilitarianism' advocate?",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "موسى" },
-              { id: "b", answer: "إبراهيم" },
-              { id: "c", answer: "نوح" },
-              { id: "d", answer: "عيسى" },
+              { id: "a", answer: "Maximizing individual rights" },
+              { id: "b", answer: "Religious adherence" },
+              { id: "c", answer: "The pursuit of personal happiness" },
+              {
+                id: "d",
+                answer: "The greatest happiness for the greatest number",
+              },
             ],
           },
         ],
@@ -4129,13 +4096,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 7,
         question: [
           {
-            label: "ما اسم النبي الذي كان له صديق من الجن؟",
+            label: "Who is known for the concept of 'the will to power'?",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "سليمان" },
-              { id: "b", answer: "محمد" },
-              { id: "c", answer: "عيسى" },
-              { id: "d", answer: "إبراهيم" },
+              { id: "a", answer: "Nietzsche" },
+              { id: "b", answer: "Hegel" },
+              { id: "c", answer: "Kant" },
+              { id: "d", answer: "Sartre" },
             ],
           },
         ],
@@ -4144,13 +4111,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 8,
         question: [
           {
-            label: "من هو النبي الذي رُفِع إلى السماء؟",
-            rightAnswer: "c",
+            label: "Which philosopher wrote 'Being and Time'?",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "موسى" },
-              { id: "b", answer: "إبراهيم" },
-              { id: "c", answer: "عيسى" },
-              { id: "d", answer: "نوح" },
+              { id: "a", answer: "Nietzsche" },
+              { id: "b", answer: "Heidegger" },
+              { id: "c", answer: "Hume" },
+              { id: "d", answer: "Berkeley" },
             ],
           },
         ],
@@ -4159,13 +4126,17 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 9,
         question: [
           {
-            label: "من هو النبي الذي دعا إلى التوحيد وأُحرق بالنار؟",
-            rightAnswer: "b",
+            label: "What is 'empiricism'?",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "موسى" },
-              { id: "b", answer: "إبراهيم" },
-              { id: "c", answer: "عيسى" },
-              { id: "d", answer: "محمد" },
+              {
+                id: "a",
+                answer:
+                  "The theory that knowledge comes from sensory experience",
+              },
+              { id: "b", answer: "The belief in innate ideas" },
+              { id: "c", answer: "A form of ethical reasoning" },
+              { id: "d", answer: "A political philosophy" },
             ],
           },
         ],
@@ -4174,13 +4145,14 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 10,
         question: [
           {
-            label: "ما هو اسم النبي الذي فُتن بملك مصر وكان له قصص مع الملكة؟",
+            label:
+              "Which philosopher is known for his work 'The Social Contract'?",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "سليمان" },
-              { id: "b", answer: "عيسى" },
-              { id: "c", answer: "إبراهيم" },
-              { id: "d", answer: "يوسف" },
+              { id: "a", answer: "Kant" },
+              { id: "b", answer: "Hegel" },
+              { id: "c", answer: "Hume" },
+              { id: "d", answer: "Rousseau" },
             ],
           },
         ],
@@ -4189,13 +4161,20 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 11,
         question: [
           {
-            label: "ما اسم النبي الذي استمرت رسالته حتى يوم القيامة؟",
+            label: "What does 'skepticism' refer to in philosophy?",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "موسى" },
-              { id: "b", answer: "إبراهيم" },
-              { id: "c", answer: "محمد" },
-              { id: "d", answer: "عيسى" },
+              { id: "a", answer: "The belief in absolute truths" },
+              {
+                id: "b",
+                answer: "The pursuit of knowledge through empirical methods",
+              },
+              {
+                id: "c",
+                answer:
+                  "The questioning of the possibility of certainty in knowledge",
+              },
+              { id: "d", answer: "The acceptance of metaphysical claims" },
             ],
           },
         ],
@@ -4204,13 +4183,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 12,
         question: [
           {
-            label: "من هو النبي الذي ذكر في القرآن أنه أسس مدينة؟",
-            rightAnswer: "b",
+            label: "Who wrote 'Beyond Good and Evil'?",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "سليمان" },
-              { id: "b", answer: "إبراهيم" },
-              { id: "c", answer: "موسى" },
-              { id: "d", answer: "محمد" },
+              { id: "a", answer: "Nietzsche" },
+              { id: "b", answer: "Hume" },
+              { id: "c", answer: "Kant" },
+              { id: "d", answer: "Sartre" },
             ],
           },
         ],
@@ -4219,13 +4198,24 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 13,
         question: [
           {
-            label: "ما اسم النبي الذي كان يعرف بلقب 'الخليل'؟",
-            rightAnswer: "a",
+            label: "What is 'rationalism'?",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "إبراهيم" },
-              { id: "b", answer: "موسى" },
-              { id: "c", answer: "سليمان" },
-              { id: "d", answer: "محمد" },
+              {
+                id: "a",
+                answer:
+                  "The belief in empirical evidence as the source of knowledge",
+              },
+              {
+                id: "b",
+                answer:
+                  "The belief that reason is the primary source of knowledge",
+              },
+              {
+                id: "c",
+                answer: "The belief in the importance of sensory experience",
+              },
+              { id: "d", answer: "A form of social philosophy" },
             ],
           },
         ],
@@ -4234,13 +4224,14 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 14,
         question: [
           {
-            label: "ما هو اسم النبي الذي كان له جدار من النار؟",
+            label:
+              "Which philosopher is known for 'A Treatise of Human Nature'?",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "عيسى" },
-              { id: "b", answer: "إبراهيم" },
-              { id: "c", answer: "نوح" },
-              { id: "d", answer: "موسى" },
+              { id: "a", answer: "Locke" },
+              { id: "b", answer: "Hume" },
+              { id: "c", answer: "Berkeley" },
+              { id: "d", answer: "Kant" },
             ],
           },
         ],
@@ -4249,13 +4240,17 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 15,
         question: [
           {
-            label: "من هو النبي الذي عُرف بمواجهة جيوش الكفار باستخدام طوفان؟",
+            label: "What does 'dialectic' refer to in philosophy?",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "سليمان" },
-              { id: "b", answer: "محمد" },
-              { id: "c", answer: "نوح" },
-              { id: "d", answer: "موسى" },
+              { id: "a", answer: "A type of political philosophy" },
+              { id: "b", answer: "The belief in empiricism" },
+              {
+                id: "c",
+                answer:
+                  "A method of argument involving contradiction and reconciliation",
+              },
+              { id: "d", answer: "A form of ethical reasoning" },
             ],
           },
         ],
@@ -4264,19 +4259,19 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
   },
   {
     id: 17,
-    subject: " Islamic History",
+    subject: "art",
     quiz: [
       {
         id: 0,
         question: [
           {
-            label: "ما هو اسم والد النبي محمد صلى الله عليه وسلم؟",
+            label: "Who painted the Mona Lisa?",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "عبد الله" },
-              { id: "b", answer: "عبد الرحمن" },
-              { id: "c", answer: "أبو طالب" },
-              { id: "d", answer: "علي" },
+              { id: "a", answer: "Leonardo da Vinci" },
+              { id: "b", answer: "Vincent van Gogh" },
+              { id: "c", answer: "Pablo Picasso" },
+              { id: "d", answer: "Claude Monet" },
             ],
           },
         ],
@@ -4285,13 +4280,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 1,
         question: [
           {
-            label: "في أي عام حدثت الهجرة النبوية من مكة إلى المدينة؟",
+            label: "Which artist is famous for his 'Starry Night' painting?",
             rightAnswer: "b",
             answers: [
-              { id: "a", answer: "621 هـ" },
-              { id: "b", answer: "622 هـ" },
-              { id: "c", answer: "620 هـ" },
-              { id: "d", answer: "623 هـ" },
+              { id: "a", answer: "Claude Monet" },
+              { id: "b", answer: "Vincent van Gogh" },
+              { id: "c", answer: "Salvador Dalí" },
+              { id: "d", answer: "Michelangelo" },
             ],
           },
         ],
@@ -4300,14 +4295,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 2,
         question: [
           {
-            label:
-              "من كان الخليفة الأول بعد وفاة النبي محمد صلى الله عليه وسلم؟",
+            label: "In which country was Pablo Picasso born?",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "عمر بن الخطاب" },
-              { id: "b", answer: "عثمان بن عفان" },
-              { id: "c", answer: "أبو بكر الصديق" },
-              { id: "d", answer: "علي بن أبي طالب" },
+              { id: "a", answer: "Italy" },
+              { id: "b", answer: "France" },
+              { id: "c", answer: "Spain" },
+              { id: "d", answer: "Portugal" },
             ],
           },
         ],
@@ -4317,13 +4311,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         question: [
           {
             label:
-              "ما هو اسم معركة غزت فيها المسلمين ضد قريش في السنة الثانية للهجرة؟",
+              "What is the art style characterized by abstract shapes and bright colors, founded by Wassily Kandinsky?",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "معركة مؤتة" },
-              { id: "b", answer: "معركة اليرموك" },
-              { id: "c", answer: "معركة الخندق" },
-              { id: "d", answer: "معركة بدر" },
+              { id: "a", answer: "Impressionism" },
+              { id: "b", answer: "Surrealism" },
+              { id: "c", answer: "Cubism" },
+              { id: "d", answer: "Abstract Art" },
             ],
           },
         ],
@@ -4332,14 +4326,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 4,
         question: [
           {
-            label:
-              "ما هو اسم الاتفاقية التي وقعها النبي محمد صلى الله عليه وسلم مع قريش في صلح الحديبية؟",
-            rightAnswer: "a",
+            label: "Who painted 'The Persistence of Memory'?",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "صلح الحديبية" },
-              { id: "b", answer: "صلح مكة" },
-              { id: "c", answer: "معاهدة المدينة" },
-              { id: "d", answer: "معاهدة الكعبة" },
+              { id: "a", answer: "René Magritte" },
+              { id: "b", answer: "Salvador Dalí" },
+              { id: "c", answer: "Max Ernst" },
+              { id: "d", answer: "Giorgio de Chirico" },
             ],
           },
         ],
@@ -4348,13 +4341,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 5,
         question: [
           {
-            label: "من كان الخليفة الأموي الذي أمر ببناء قبة الصخرة في القدس؟",
-            rightAnswer: "b",
+            label: "What is the primary medium used in fresco painting?",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "العباسي" },
-              { id: "b", answer: "عبد الملك بن مروان" },
-              { id: "c", answer: "المعتصم" },
-              { id: "d", answer: "الهادي" },
+              { id: "a", answer: "Oil" },
+              { id: "b", answer: "Acrylic" },
+              { id: "c", answer: "Water" },
+              { id: "d", answer: "Ink" },
             ],
           },
         ],
@@ -4363,14 +4356,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 6,
         question: [
           {
-            label:
-              "ما هو اسم المعركة التي وقعت بين المسلمين والفرس في عهد الخليفة عمر بن الخطاب؟",
-            rightAnswer: "d",
+            label: "Who sculpted 'The Thinker'?",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "معركة مؤتة" },
-              { id: "b", answer: "معركة القادسية" },
-              { id: "c", answer: "معركة اليرموك" },
-              { id: "d", answer: "معركة الجسر" },
+              { id: "a", answer: "Auguste Rodin" },
+              { id: "b", answer: "Donatello" },
+              { id: "c", answer: "Michelangelo" },
+              { id: "d", answer: "Henry Moore" },
             ],
           },
         ],
@@ -4380,13 +4372,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         question: [
           {
             label:
-              "ما هو اسم العهد الذي أعطاه النبي محمد صلى الله عليه وسلم للأقباط في مصر؟",
-            rightAnswer: "c",
+              "Which artist is known for painting large-scale, close-up flowers?",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "عهد الأقباط" },
-              { id: "b", answer: "وثيقة مكة" },
-              { id: "c", answer: "عهد الأقباط" },
-              { id: "d", answer: "وثيقة المدينة" },
+              { id: "a", answer: "Frida Kahlo" },
+              { id: "b", answer: "Joan Miró" },
+              { id: "c", answer: "Jackson Pollock" },
+              { id: "d", answer: "Georgia O'Keeffe" },
             ],
           },
         ],
@@ -4395,13 +4387,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 8,
         question: [
           {
-            label: "من كان أول خليفة عباسي؟",
-            rightAnswer: "a",
+            label: "What art movement is Claude Monet associated with?",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "أبو العباس السفاح" },
-              { id: "b", answer: "المأمون" },
-              { id: "c", answer: "المهدي" },
-              { id: "d", answer: "الهادي" },
+              { id: "a", answer: "Cubism" },
+              { id: "b", answer: "Impressionism" },
+              { id: "c", answer: "Surrealism" },
+              { id: "d", answer: "Baroque" },
             ],
           },
         ],
@@ -4410,14 +4402,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 9,
         question: [
           {
-            label:
-              "ما هو اسم الدولة التي أسسها سليمان القانوني في القرن السادس عشر الميلادي؟",
-            rightAnswer: "b",
+            label: "Which of these artists is famous for his drip paintings?",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "الدولة الأموية" },
-              { id: "b", answer: "الدولة العثمانية" },
-              { id: "c", answer: "الدولة الفاطمية" },
-              { id: "d", answer: "الدولة العباسية" },
+              { id: "a", answer: "Andy Warhol" },
+              { id: "b", answer: "Roy Lichtenstein" },
+              { id: "c", answer: "Jackson Pollock" },
+              { id: "d", answer: "Mark Rothko" },
             ],
           },
         ],
@@ -4426,13 +4417,14 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 10,
         question: [
           {
-            label: "ما هو اسم الكتاب الذي ألفه ابن خلدون حول التاريخ؟",
+            label:
+              "What medium did Michelangelo use to create the Sistine Chapel ceiling?",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "مقدمة ابن خلدون" },
-              { id: "b", answer: "الكتب الجغرافية" },
-              { id: "c", answer: "تاريخ الطبري" },
-              { id: "d", answer: "الفتوحات الإسلامية" },
+              { id: "a", answer: "Fresco" },
+              { id: "b", answer: "Oil paint" },
+              { id: "c", answer: "Tempera" },
+              { id: "d", answer: "Acrylic" },
             ],
           },
         ],
@@ -4441,13 +4433,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 11,
         question: [
           {
-            label: "من هو الخليفة العباسي الذي أمر ببناء بغداد؟",
-            rightAnswer: "c",
+            label: "Who painted 'Guernica'?",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "المعتصم" },
-              { id: "b", answer: "المأمون" },
-              { id: "c", answer: "أبو جعفر المنصور" },
-              { id: "d", answer: "الهادي" },
+              { id: "a", answer: "Henri Matisse" },
+              { id: "b", answer: "Pablo Picasso" },
+              { id: "c", answer: "Salvador Dalí" },
+              { id: "d", answer: "Joan Miró" },
             ],
           },
         ],
@@ -4456,13 +4448,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 12,
         question: [
           {
-            label: "ما هي المدينة التي كانت عاصمة الدولة الأموية؟",
-            rightAnswer: "b",
+            label: "Which artist is known for his surreal, melting clocks?",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "القدس" },
-              { id: "b", answer: "دمشق" },
-              { id: "c", answer: "بغداد" },
-              { id: "d", answer: "القاهرة" },
+              { id: "a", answer: "René Magritte" },
+              { id: "b", answer: "Max Ernst" },
+              { id: "c", answer: "Salvador Dalí" },
+              { id: "d", answer: "Giorgio de Chirico" },
             ],
           },
         ],
@@ -4471,13 +4463,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 13,
         question: [
           {
-            label: "ما هو اسم الملك الفاطمي الذي أمر ببناء جامع الأزهر؟",
-            rightAnswer: "d",
+            label: "In which museum is the 'Mona Lisa' displayed?",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "الحاكم بأمر الله" },
-              { id: "b", answer: "المهدي" },
-              { id: "c", answer: "الظاهر" },
-              { id: "d", answer: "المعز لدين الله" },
+              { id: "a", answer: "The Louvre" },
+              { id: "b", answer: "The British Museum" },
+              { id: "c", answer: "The Prado" },
+              { id: "d", answer: "The Uffizi" },
             ],
           },
         ],
@@ -4487,13 +4479,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         question: [
           {
             label:
-              "ما هو اسم المعركة التي انتصر فيها المسلمون على الفرس في عهد الخليفة عمر بن الخطاب؟",
-            rightAnswer: "b",
+              "What is the primary subject of Edvard Munch's famous painting 'The Scream'?",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "معركة مؤتة" },
-              { id: "b", answer: "معركة القادسية" },
-              { id: "c", answer: "معركة الخندق" },
-              { id: "d", answer: "معركة بدر" },
+              { id: "a", answer: "A landscape" },
+              { id: "b", answer: "A crowd" },
+              { id: "c", answer: "A dance" },
+              { id: "d", answer: "A figure with a haunting expression" },
             ],
           },
         ],
@@ -4502,13 +4494,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 15,
         question: [
           {
-            label: "من هو مؤسس الدولة الأموية؟",
-            rightAnswer: "c",
+            label: "Which artist is known for co-founding the Cubist movement?",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "عبد الملك بن مروان" },
-              { id: "b", answer: "العباس بن عبد المطلب" },
-              { id: "c", answer: "مروان بن الحكم" },
-              { id: "d", answer: "عبد الله بن الزبير" },
+              { id: "a", answer: "Henri Matisse" },
+              { id: "b", answer: "Pablo Picasso" },
+              { id: "c", answer: "Salvador Dalí" },
+              { id: "d", answer: "Georges Seurat" },
             ],
           },
         ],
@@ -4516,20 +4508,20 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
     ],
   },
   {
-    id:18,
-    subject:"Quranic Knowledge",
-    quiz:[
+    id: 18,
+    subject: "sports",
+    quiz: [
       {
         id: 0,
         question: [
           {
-            label: "ما هي السورة التي تُعتبر قلب القرآن؟",
+            label: "Which country won the FIFA World Cup in 2018?",
             rightAnswer: "b",
             answers: [
-              { id: "a", answer: "سورة الفاتحة" },
-              { id: "b", answer: "سورة يس" },
-              { id: "c", answer: "سورة البقرة" },
-              { id: "d", answer: "سورة الكهف" },
+              { id: "a", answer: "Brazil" },
+              { id: "b", answer: "France" },
+              { id: "c", answer: "Germany" },
+              { id: "d", answer: "Argentina" },
             ],
           },
         ],
@@ -4538,13 +4530,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 1,
         question: [
           {
-            label: "ما هي السورة التي تحتوي على أطول آية في القرآن؟",
-            rightAnswer: "a",
+            label: "How many players are on a basketball team?",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "سورة البقرة" },
-              { id: "b", answer: "سورة آل عمران" },
-              { id: "c", answer: "سورة النساء" },
-              { id: "d", answer: "سورة المائدة" },
+              { id: "a", answer: "5" },
+              { id: "b", answer: "6" },
+              { id: "c", answer: "7" },
+              { id: "d", answer: "5" },
             ],
           },
         ],
@@ -4553,13 +4545,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 2,
         question: [
           {
-            label: "ما هي السورة التي يُطلق عليها اسم 'سورة الشفاعة'؟",
-            rightAnswer: "d",
+            label: "Which sport is known as the 'king of sports'?",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "سورة الفلق" },
-              { id: "b", answer: "سورة الإخلاص" },
-              { id: "c", answer: "سورة الكافرون" },
-              { id: "d", answer: "سورة النبأ" },
+              { id: "a", answer: "Soccer" },
+              { id: "b", answer: "Basketball" },
+              { id: "c", answer: "Tennis" },
+              { id: "d", answer: "Cricket" },
             ],
           },
         ],
@@ -4568,13 +4560,14 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 3,
         question: [
           {
-            label: "ما هي السورة التي تُسمى بـ'سورة الصمد'؟",
-            rightAnswer: "b",
+            label:
+              "Who holds the record for the most goals scored in World Cup history?",
+            rightAnswer: "d",
             answers: [
-              { id: "a", answer: "سورة الفاتحة" },
-              { id: "b", answer: "سورة الإخلاص" },
-              { id: "c", answer: "سورة الرحمن" },
-              { id: "d", answer: "سورة الفلق" },
+              { id: "a", answer: "Cristiano Ronaldo" },
+              { id: "b", answer: "Pelé" },
+              { id: "c", answer: "Maradona" },
+              { id: "d", answer: "Miroslav Klose" },
             ],
           },
         ],
@@ -4583,13 +4576,14 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 4,
         question: [
           {
-            label: "من هو النبي الذي ذُكر اسمه في سورة مريم؟",
-            rightAnswer: "a",
+            label:
+              "What is the maximum score in a single game of ten-pin bowling?",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "عيسى" },
-              { id: "b", answer: "موسى" },
-              { id: "c", answer: "محمد" },
-              { id: "d", answer: "إبراهيم" },
+              { id: "a", answer: "200" },
+              { id: "b", answer: "300" },
+              { id: "c", answer: "250" },
+              { id: "d", answer: "400" },
             ],
           },
         ],
@@ -4598,13 +4592,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 5,
         question: [
           {
-            label: "ما هي السورة التي تحتوي على آية الكرسي؟",
-            rightAnswer: "c",
+            label: "Which country is famous for originating the sport of Judo?",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "سورة الرحمن" },
-              { id: "b", answer: "سورة الإخلاص" },
-              { id: "c", answer: "سورة البقرة" },
-              { id: "d", answer: "سورة النصر" },
+              { id: "a", answer: "Japan" },
+              { id: "b", answer: "China" },
+              { id: "c", answer: "Korea" },
+              { id: "d", answer: "Thailand" },
             ],
           },
         ],
@@ -4613,13 +4607,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 6,
         question: [
           {
-            label: "ما هي السورة التي تُسمى بـ'سورة الحج'؟",
-            rightAnswer: "d",
+            label: "In which sport would you perform a slam dunk?",
+            rightAnswer: "b",
             answers: [
-              { id: "a", answer: "سورة القمر" },
-              { id: "b", answer: "سورة النبأ" },
-              { id: "c", answer: "سورة الروم" },
-              { id: "d", answer: "سورة الحج" },
+              { id: "a", answer: "Soccer" },
+              { id: "b", answer: "Basketball" },
+              { id: "c", answer: "Volleyball" },
+              { id: "d", answer: "Baseball" },
             ],
           },
         ],
@@ -4628,13 +4622,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 7,
         question: [
           {
-            label: "ما هي السورة التي تُعنى بحياة الإنسان في الدنيا والآخرة؟",
-            rightAnswer: "b",
+            label: "How many rounds are there in a standard boxing match?",
+            rightAnswer: "a",
             answers: [
-              { id: "a", answer: "سورة الفاتحة" },
-              { id: "b", answer: "سورة الكهف" },
-              { id: "c", answer: "سورة السجدة" },
-              { id: "d", answer: "سورة الأنعام" },
+              { id: "a", answer: "12" },
+              { id: "b", answer: "10" },
+              { id: "c", answer: "15" },
+              { id: "d", answer: "8" },
             ],
           },
         ],
@@ -4643,13 +4637,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 8,
         question: [
           {
-            label: "ما هو اسم السورة التي تحتوي على وصف للمؤمنين في القرآن؟",
+            label: "Which tennis Grand Slam is played on grass?",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "سورة الفلق" },
-              { id: "b", answer: "سورة الإخلاص" },
-              { id: "c", answer: "سورة الكافرون" },
-              { id: "d", answer: "سورة المؤمنون" },
+              { id: "a", answer: "Australian Open" },
+              { id: "b", answer: "French Open" },
+              { id: "c", answer: "US Open" },
+              { id: "d", answer: "Wimbledon" },
             ],
           },
         ],
@@ -4658,13 +4652,14 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 9,
         question: [
           {
-            label: "ما هي السورة التي تبدأ بـ'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ'؟",
+            label:
+              "Which country won the most Olympic gold medals in the 2008 Beijing Games?",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "سورة الفاتحة" },
-              { id: "b", answer: "سورة الكهف" },
-              { id: "c", answer: "سورة النصر" },
-              { id: "d", answer: "سورة الإخلاص" },
+              { id: "a", answer: "China" },
+              { id: "b", answer: "USA" },
+              { id: "c", answer: "Russia" },
+              { id: "d", answer: "UK" },
             ],
           },
         ],
@@ -4673,13 +4668,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 10,
         question: [
           {
-            label: "من هو النبي الذي ذُكر اسمه في سورة البقرة؟",
-            rightAnswer: "b",
+            label: "In which sport is the term 'hole-in-one' used?",
+            rightAnswer: "c",
             answers: [
-              { id: "a", answer: "عيسى" },
-              { id: "b", answer: "موسى" },
-              { id: "c", answer: "محمد" },
-              { id: "d", answer: "إبراهيم" },
+              { id: "a", answer: "Tennis" },
+              { id: "b", answer: "Soccer" },
+              { id: "c", answer: "Golf" },
+              { id: "d", answer: "Hockey" },
             ],
           },
         ],
@@ -4688,13 +4683,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 11,
         question: [
           {
-            label: "ما هي السورة التي تُعدّ أطول سورة في القرآن؟",
+            label: "Which NFL team has won the most Super Bowls?",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "سورة البقرة" },
-              { id: "b", answer: "سورة آل عمران" },
-              { id: "c", answer: "سورة النساء" },
-              { id: "d", answer: "سورة المائدة" },
+              { id: "a", answer: "New England Patriots" },
+              { id: "b", answer: "Dallas Cowboys" },
+              { id: "c", answer: "Pittsburgh Steelers" },
+              { id: "d", answer: "San Francisco 49ers" },
             ],
           },
         ],
@@ -4703,13 +4698,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 12,
         question: [
           {
-            label: "ما هي السورة التي تبدأ بـ'قُلْ هُوَ ٱللَّهُ أَحَدٌ'؟",
+            label: "What is the standard distance of a marathon race?",
             rightAnswer: "b",
             answers: [
-              { id: "a", answer: "سورة الفلق" },
-              { id: "b", answer: "سورة الإخلاص" },
-              { id: "c", answer: "سورة الناس" },
-              { id: "d", answer: "سورة الكافرون" },
+              { id: "a", answer: "20 miles" },
+              { id: "b", answer: "26.2 miles" },
+              { id: "c", answer: "30 miles" },
+              { id: "d", answer: "15 miles" },
             ],
           },
         ],
@@ -4718,13 +4713,13 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 13,
         question: [
           {
-            label: "ما هي السورة التي تُعنى بأحداث معركة بدر؟",
+            label: "Which sport uses the term 'hat-trick'?",
             rightAnswer: "c",
             answers: [
-              { id: "a", answer: "سورة المائدة" },
-              { id: "b", answer: "سورة آل عمران" },
-              { id: "c", answer: "سورة الأنفال" },
-              { id: "d", answer: "سورة البراءة" },
+              { id: "a", answer: "Tennis" },
+              { id: "b", answer: "Golf" },
+              { id: "c", answer: "Hockey" },
+              { id: "d", answer: "Baseball" },
             ],
           },
         ],
@@ -4733,13 +4728,14 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 14,
         question: [
           {
-            label: "ما هي السورة التي تتحدث عن النعيم والجحيم؟",
+            label:
+              "Which swimmer holds the record for the most Olympic gold medals?",
             rightAnswer: "d",
             answers: [
-              { id: "a", answer: "سورة الفتح" },
-              { id: "b", answer: "سورة الفجر" },
-              { id: "c", answer: "سورة الإسراء" },
-              { id: "d", answer: "سورة الحاقة" },
+              { id: "a", answer: "Ian Thorpe" },
+              { id: "b", answer: "Michael Phelps" },
+              { id: "c", answer: "Mark Spitz" },
+              { id: "d", answer: "Ryan Lochte" },
             ],
           },
         ],
@@ -4748,17 +4744,509 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
         id: 15,
         question: [
           {
-            label: "ما هو اسم السورة التي تتحدث عن خلق الإنسان؟",
+            label: "What is the term for a soccer game that ends in a tie?",
             rightAnswer: "a",
             answers: [
-              { id: "a", answer: "سورة الإنسان" },
-              { id: "b", answer: "سورة النبأ" },
-              { id: "c", answer: "سورة الكهف" },
-              { id: "d", answer: "سورة البينة" },
+              { id: "a", answer: "Draw" },
+              { id: "b", answer: "Overtime" },
+              { id: "c", answer: "Penalty Shootout" },
+              { id: "d", answer: "Extra Time" },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id:19,
+    subject:"Islamic Science and Contributions",
+    quiz:[
+      {
+        id: 0,
+        question: [
+          {
+            label: "من هو المعروف بأب الجبر؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "الفارابي" },
+              { id: "b", answer: "ابن رشد" },
+              { id: "c", answer: "الخوارزمي" },
+              { id: "d", answer: "ابن الهيثم" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 1,
+        question: [
+          {
+            label: "ما هي مساهمة ابن سينا في الطب؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "اكتشاف الدورة الدموية" },
+              { id: "b", answer: "تطوير الجراحة" },
+              { id: "c", answer: "دراسة العيون" },
+              { id: "d", answer: "تأليف كتاب القانون في الطب" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
+        question: [
+          {
+            label: "ما هي الأداة البصرية التي اخترعها ابن الهيثم؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "الكاميرا ذات الثقب" },
+              { id: "b", answer: "التلسكوب" },
+              { id: "c", answer: "الميكروسكوب" },
+              { id: "d", answer: "العدسة المكبرة" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 3,
+        question: [
+          {
+            label: "من هو العالم المسلم الذي أسس علم الاجتماع؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "ابن رشد" },
+              { id: "b", answer: "ابن خلدون" },
+              { id: "c", answer: "الفارابي" },
+              { id: "d", answer: "الرازي" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 4,
+        question: [
+          {
+            label: "ما هو الكتاب الذي ألفه ابن الهيثم في علم البصريات؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "الشفاء" },
+              { id: "b", answer: "المناظر" },
+              { id: "c", answer: "الكتاب المناظر" },
+              { id: "d", answer: "القانون في الطب" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 5,
+        question: [
+          {
+            label: "من هو العالم المسلم الذي اكتشف الدورة الدموية الصغرى؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "ابن النفيس" },
+              { id: "b", answer: "ابن سينا" },
+              { id: "c", answer: "الرازي" },
+              { id: "d", answer: "الخوارزمي" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 6,
+        question: [
+          {
+            label: "ما هو المجال الذي ساهم فيه الفارابي بشكل كبير؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "الفيزياء" },
+              { id: "b", answer: "الفلسفة" },
+              { id: "c", answer: "الكيمياء" },
+              { id: "d", answer: "الجغرافيا" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 7,
+        question: [
+          {
+            label: "من هو العالم الذي يعرف بـ 'المعلم الثاني' بعد أرسطو؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "ابن رشد" },
+              { id: "b", answer: "الرازي" },
+              { id: "c", answer: "الفارابي" },
+              { id: "d", answer: "ابن سينا" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 8,
+        question: [
+          {
+            label: "ما هو الكتاب الذي ألفه ابن سينا في الفلسفة؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "الشفاء" },
+              { id: "b", answer: "القانون في الطب" },
+              { id: "c", answer: "كتاب الأدوية المفردة" },
+              { id: "d", answer: "الإشارات والتنبيهات" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 9,
+        question: [
+          {
+            label: "من هو الطبيب الذي ألف كتاب 'الحاوي'؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "ابن سينا" },
+              { id: "b", answer: "الرازي" },
+              { id: "c", answer: "ابن النفيس" },
+              { id: "d", answer: "الفارابي" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 10,
+        question: [
+          {
+            label: "ما هي المادة الكيميائية التي اكتشفها جابر بن حيان؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "حمض الكبريتيك" },
+              { id: "b", answer: "الصودا الكاوية" },
+              { id: "c", answer: "حمض النيتريك" },
+              { id: "d", answer: "الكلور" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 11,
+        question: [
+          {
+            label: "ما هو الكتاب الذي ألفه جابر بن حيان في الكيمياء؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "كتاب الأسرار" },
+              { id: "b", answer: "الشفاء" },
+              { id: "c", answer: "القانون في الطب" },
+              { id: "d", answer: "كتاب المناظر" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 12,
+        question: [
+          {
+            label: "من هو العالم الذي ساهم في تطوير علم الجبر والمقابلة؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "الفارابي" },
+              { id: "b", answer: "الخوارزمي" },
+              { id: "c", answer: "ابن رشد" },
+              { id: "d", answer: "ابن سينا" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 13,
+        question: [
+          {
+            label: "ما هو الكتاب الذي ألفه الرازي في الطب؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "القانون في الطب" },
+              { id: "b", answer: "الشفاء" },
+              { id: "c", answer: "كتاب المناظر" },
+              { id: "d", answer: "الحاوي" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 14,
+        question: [
+          {
+            label: "من هو العالم الذي كتب 'التصريف لمن عجز عن التأليف'؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "الزهراوي" },
+              { id: "b", answer: "الرازي" },
+              { id: "c", answer: "ابن النفيس" },
+              { id: "d", answer: "جابر بن حيان" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 15,
+        question: [
+          {
+            label: "ما هي مساهمة ابن النفيس في الطب؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "تطوير الجراحة" },
+              { id: "b", answer: "تأليف كتاب القانون في الطب" },
+              { id: "c", answer: "اكتشاف الدورة الدموية الصغرى" },
+              { id: "d", answer: "دراسة العيون" },
             ],
           },
         ],
       },
     ]
-  }
+  },
+  {
+    id: 20,
+    subject: "science",
+    quiz: [
+      {
+        id: 0,
+        question: [
+          {
+            label: "What is the chemical symbol for water?",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "O2" },
+              { id: "b", answer: "H2O" },
+              { id: "c", answer: "CO2" },
+              { id: "d", answer: "H2" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 1,
+        question: [
+          {
+            label: "What planet is known as the Red Planet?",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "Mars" },
+              { id: "b", answer: "Venus" },
+              { id: "c", answer: "Jupiter" },
+              { id: "d", answer: "Saturn" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
+        question: [
+          {
+            label: "What is the powerhouse of the cell?",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "Nucleus" },
+              { id: "b", answer: "Ribosome" },
+              { id: "c", answer: "Mitochondria" },
+              { id: "d", answer: "Chloroplast" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 3,
+        question: [
+          {
+            label: "What gas do plants absorb from the atmosphere?",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "Oxygen" },
+              { id: "b", answer: "Carbon dioxide" },
+              { id: "c", answer: "Nitrogen" },
+              { id: "d", answer: "Hydrogen" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 4,
+        question: [
+          {
+            label: "What is the hardest natural substance on Earth?",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "Diamond" },
+              { id: "b", answer: "Gold" },
+              { id: "c", answer: "Iron" },
+              { id: "d", answer: "Silver" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 5,
+        question: [
+          {
+            label: "What is the speed of light?",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "300,000 km/h" },
+              { id: "b", answer: "150,000 km/s" },
+              { id: "c", answer: "300,000 km/s" },
+              { id: "d", answer: "150,000 km/h" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 6,
+        question: [
+          {
+            label: "What planet is known for its rings?",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "Jupiter" },
+              { id: "b", answer: "Saturn" },
+              { id: "c", answer: "Uranus" },
+              { id: "d", answer: "Neptune" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 7,
+        question: [
+          {
+            label: "What force keeps us on the ground?",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "Magnetism" },
+              { id: "b", answer: "Friction" },
+              { id: "c", answer: "Centripetal force" },
+              { id: "d", answer: "Gravity" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 8,
+        question: [
+          {
+            label: "What element does 'O' represent on the periodic table?",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "Oxygen" },
+              { id: "b", answer: "Gold" },
+              { id: "c", answer: "Osmium" },
+              { id: "d", answer: "Oganesson" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 9,
+        question: [
+          {
+            label: "What is the most abundant gas in the Earth's atmosphere?",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "Oxygen" },
+              { id: "b", answer: "Nitrogen" },
+              { id: "c", answer: "Carbon dioxide" },
+              { id: "d", answer: "Argon" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 10,
+        question: [
+          {
+            label: "What is the chemical symbol for gold?",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "Ag" },
+              { id: "b", answer: "Fe" },
+              { id: "c", answer: "Pb" },
+              { id: "d", answer: "Au" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 11,
+        question: [
+          {
+            label: "What is the main gas found in the air we breathe?",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "Hydrogen" },
+              { id: "b", answer: "Carbon dioxide" },
+              { id: "c", answer: "Nitrogen" },
+              { id: "d", answer: "Oxygen" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 12,
+        question: [
+          {
+            label: "Which planet is closest to the sun?",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "Mercury" },
+              { id: "b", answer: "Venus" },
+              { id: "c", answer: "Earth" },
+              { id: "d", answer: "Mars" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 13,
+        question: [
+          {
+            label: "What is the largest organ in the human body?",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "Heart" },
+              { id: "b", answer: "Skin" },
+              { id: "c", answer: "Liver" },
+              { id: "d", answer: "Lungs" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 14,
+        question: [
+          {
+            label: "What type of galaxy is the Milky Way?",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "Elliptical" },
+              { id: "b", answer: "Irregular" },
+              { id: "c", answer: "Spiral" },
+              { id: "d", answer: "Lenticular" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 15,
+        question: [
+          {
+            label: "What is the most common type of star in the Milky Way?",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "Red giant" },
+              { id: "b", answer: "White dwarf" },
+              { id: "c", answer: "Blue giant" },
+              { id: "d", answer: "Red dwarf" },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];

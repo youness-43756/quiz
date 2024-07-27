@@ -8,7 +8,7 @@ export default function QuizScore({ replay, score }:
     { replay: () => void, score: scoreTypes }) {
     return (
         <div className="flex flex-col items-center gap-8">
-            <span className="text-5xl font-bold text-white tracking-wide">{score.result}</span>
+            <span className="text-5xl text-center font-bold text-white tracking-wide">{score.result}</span>
             {
                 score.points < 1 ? <Angry className={scoreEmojiStyle} /> :
                     score.points <= 4 ? <Frown className={scoreEmojiStyle} /> :
