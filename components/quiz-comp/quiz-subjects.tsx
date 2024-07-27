@@ -22,12 +22,12 @@ export function SelectQuizSubject() {
             onValueChange={(v: string) => SelectSubject(v)}
             value={subject}
         >
-            <SelectTrigger className="w-fit">
+            <SelectTrigger className="w-[150px]">
                 <SelectValue placeholder="Select a subject" />
             </SelectTrigger>
             <SelectContent>
                 {QuizQuestionsWithSubjects.map(quiz => (
-                    <SelectItem key={quiz.subject} value={quiz.subject}>
+                    <SelectItem className="text-base" key={quiz.subject} value={quiz.subject}>
                         {quiz.subject}
                     </SelectItem>
                 ))}
