@@ -1,38 +1,37 @@
 "use client";
 import {
-  QuizQuestionProps,
-  QuizQuestionsProps,
   QuizQuestionsWithSubjects,
 } from "@/lib/quiz-questions/q";
 import { createContext, useState, useEffect } from "react";
 import { QuizContextType, isAnsweredTypes, scoreTypes } from "./contextTypes";
+import { QuizQuestionTypes, QuizQuestionsTypes } from "@/lib/quiz-questions/qTypes";
 
 export const QuizContext = createContext<QuizContextType | undefined>(
   undefined
 );
 
 export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
-  const [subject, setSubject] = useState("nature");
+  function RandomIndexGenerator(i: any) {
+    const randomIndex: number = Math.floor(Math.random() * i.length);
+    return randomIndex;
+  }
+  const [subject, setSubject] = useState(QuizQuestionsWithSubjects[RandomIndexGenerator(QuizQuestionsWithSubjects)].subject);
 
   //? Bring questions by subject and store it in "quizState":
   const questionsBySubject = QuizQuestionsWithSubjects.filter(q => q.subject === subject);
-  const [quizState, setQuizState] = useState<QuizQuestionsProps>(questionsBySubject[0].quiz);
+  const [quizState, setQuizState] = useState<QuizQuestionsTypes>(questionsBySubject[0].quiz);
 
   //? Stock single "QuizQuestions":
-  const [quizData, setQuizData] = useState<QuizQuestionProps>()
+  const [quizData, setQuizData] = useState<QuizQuestionTypes>()
 
   const [isAnswered, setIsAnswered] = useState<isAnsweredTypes>()
   const [disablAnswers, setDisablAnswers] = useState<boolean>(false)
   const [score, setScore] = useState<scoreTypes>({ points: 0, result: "Horrible score!" });
 
-  function RandomN() {
-    const randomIndex: number = Math.floor(Math.random() * quizState.length);
-    return randomIndex;
-  }
 
   //? Every time i remove question from "quizState", generate new question:
   useEffect(() => {
-    setQuizData(quizState[RandomN()])
+    setQuizData(quizState[RandomIndexGenerator(quizState)])
   }, [quizState])
 
   //? Determine which subject a user want:

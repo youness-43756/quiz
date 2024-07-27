@@ -1,6 +1,8 @@
+import {
+  QuizQuestionTypes,
+  QuizQuestionsTypes,
+} from "@/lib/quiz-questions/qTypes";
 import { Dispatch, SetStateAction } from "react";
-
-import { QuizQuestionProps, QuizQuestionsProps } from "@/lib/quiz-questions/q";
 
 export type isAnsweredTypes = {
   status: boolean;
@@ -8,14 +10,15 @@ export type isAnsweredTypes = {
   rightOne: string;
   userOne: string;
 };
+export type scoreTypes = { points: number; result: string };
 
 export interface QuizContextType {
   subject: string;
   setSubject: Dispatch<SetStateAction<string>>;
-  quizState: QuizQuestionsProps;
-  setQuizState: Dispatch<SetStateAction<QuizQuestionsProps>>;
-  quizData: QuizQuestionProps | undefined;
-  setQuizData: Dispatch<SetStateAction<QuizQuestionProps | undefined>>;
+  quizState: QuizQuestionsTypes;
+  setQuizState: Dispatch<SetStateAction<QuizQuestionsTypes>>;
+  quizData: QuizQuestionTypes | undefined;
+  setQuizData: Dispatch<SetStateAction<QuizQuestionTypes | undefined>>;
   isAnswered: isAnsweredTypes | undefined;
   setIsAnswered: Dispatch<SetStateAction<isAnsweredTypes | undefined>>;
   disablAnswers: boolean;
@@ -28,4 +31,3 @@ export interface QuizContextType {
   Replay: () => void;
   SelectSubject: (value: string) => void;
 }
-export type scoreTypes = { points: number; result: string };

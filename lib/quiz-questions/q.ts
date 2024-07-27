@@ -1,41 +1,4 @@
-export type QuizQuestionsProps = {
-  id: number;
-  question: {
-    label: string;
-    rightAnswer: string;
-    answers: {
-      id: string;
-      answer: string;
-    }[];
-  }[];
-}[];
-export type QuizQuestionProps = {
-  id: number;
-  question: {
-    label: string;
-    rightAnswer: string;
-    answers: {
-      id: string;
-      answer: string;
-    }[];
-  }[];
-};
-
-export type QuizQuestionsWithSubjectsTypes = {
-  id: number;
-  subject: string;
-  quiz: {
-    id: number;
-    question: {
-      label: string;
-      rightAnswer: string;
-      answers: {
-        id: string;
-        answer: string;
-      }[];
-    }[];
-  }[];
-}[];
+import { QuizQuestionsWithSubjectsTypes } from "./qTypes";
 
 export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
   {
@@ -4052,4 +4015,750 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
       },
     ],
   },
+  {
+    id: 16,
+    subject: "Prophets and Messengers",
+    quiz: [
+      {
+        id: 0,
+        question: [
+          {
+            label: "من كان أول نبي في الإسلام؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "آدم" },
+              { id: "b", answer: "نوح" },
+              { id: "c", answer: "إبراهيم" },
+              { id: "d", answer: "موسى" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 1,
+        question: [
+          {
+            label: "ما هو اسم النبي الذي بنى الكعبة؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "موسى" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "نوح" },
+              { id: "d", answer: "عيسى" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
+        question: [
+          {
+            label: "من هو النبي الذي أُرسل إلى بني إسرائيل بعد موسى؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "إبراهيم" },
+              { id: "b", answer: "محمد" },
+              { id: "c", answer: "عيسى" },
+              { id: "d", answer: "إدريس" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 3,
+        question: [
+          {
+            label: "ما هو اسم النبي الذي ابتلعه الحوت؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "إبراهيم" },
+              { id: "b", answer: "محمد" },
+              { id: "c", answer: "عيسى" },
+              { id: "d", answer: "يونس" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 4,
+        question: [
+          {
+            label: "ما هي معجزة النبي موسى عندما ذهب إلى فرعون؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "عصا تحولت إلى ثعبان" },
+              { id: "b", answer: "شفاء المرضى" },
+              { id: "c", answer: "تقسيم البحر" },
+              { id: "d", answer: "إنزال المائدة" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 5,
+        question: [
+          {
+            label:
+              "من هو النبي الذي أعطاه الله ملكاً لم يكن لأحد قبله ولا بعده؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "عيسى" },
+              { id: "b", answer: "سليمان" },
+              { id: "c", answer: "محمد" },
+              { id: "d", answer: "إبراهيم" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 6,
+        question: [
+          {
+            label: "ما اسم النبي الذي سار على الماء؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "موسى" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "نوح" },
+              { id: "d", answer: "عيسى" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 7,
+        question: [
+          {
+            label: "ما اسم النبي الذي كان له صديق من الجن؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "سليمان" },
+              { id: "b", answer: "محمد" },
+              { id: "c", answer: "عيسى" },
+              { id: "d", answer: "إبراهيم" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 8,
+        question: [
+          {
+            label: "من هو النبي الذي رُفِع إلى السماء؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "موسى" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "عيسى" },
+              { id: "d", answer: "نوح" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 9,
+        question: [
+          {
+            label: "من هو النبي الذي دعا إلى التوحيد وأُحرق بالنار؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "موسى" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "عيسى" },
+              { id: "d", answer: "محمد" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 10,
+        question: [
+          {
+            label: "ما هو اسم النبي الذي فُتن بملك مصر وكان له قصص مع الملكة؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "سليمان" },
+              { id: "b", answer: "عيسى" },
+              { id: "c", answer: "إبراهيم" },
+              { id: "d", answer: "يوسف" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 11,
+        question: [
+          {
+            label: "ما اسم النبي الذي استمرت رسالته حتى يوم القيامة؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "موسى" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "محمد" },
+              { id: "d", answer: "عيسى" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 12,
+        question: [
+          {
+            label: "من هو النبي الذي ذكر في القرآن أنه أسس مدينة؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "سليمان" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "موسى" },
+              { id: "d", answer: "محمد" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 13,
+        question: [
+          {
+            label: "ما اسم النبي الذي كان يعرف بلقب 'الخليل'؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "إبراهيم" },
+              { id: "b", answer: "موسى" },
+              { id: "c", answer: "سليمان" },
+              { id: "d", answer: "محمد" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 14,
+        question: [
+          {
+            label: "ما هو اسم النبي الذي كان له جدار من النار؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "عيسى" },
+              { id: "b", answer: "إبراهيم" },
+              { id: "c", answer: "نوح" },
+              { id: "d", answer: "موسى" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 15,
+        question: [
+          {
+            label: "من هو النبي الذي عُرف بمواجهة جيوش الكفار باستخدام طوفان؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "سليمان" },
+              { id: "b", answer: "محمد" },
+              { id: "c", answer: "نوح" },
+              { id: "d", answer: "موسى" },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 17,
+    subject: " Islamic History",
+    quiz: [
+      {
+        id: 0,
+        question: [
+          {
+            label: "ما هو اسم والد النبي محمد صلى الله عليه وسلم؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "عبد الله" },
+              { id: "b", answer: "عبد الرحمن" },
+              { id: "c", answer: "أبو طالب" },
+              { id: "d", answer: "علي" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 1,
+        question: [
+          {
+            label: "في أي عام حدثت الهجرة النبوية من مكة إلى المدينة؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "621 هـ" },
+              { id: "b", answer: "622 هـ" },
+              { id: "c", answer: "620 هـ" },
+              { id: "d", answer: "623 هـ" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
+        question: [
+          {
+            label:
+              "من كان الخليفة الأول بعد وفاة النبي محمد صلى الله عليه وسلم؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "عمر بن الخطاب" },
+              { id: "b", answer: "عثمان بن عفان" },
+              { id: "c", answer: "أبو بكر الصديق" },
+              { id: "d", answer: "علي بن أبي طالب" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 3,
+        question: [
+          {
+            label:
+              "ما هو اسم معركة غزت فيها المسلمين ضد قريش في السنة الثانية للهجرة؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "معركة مؤتة" },
+              { id: "b", answer: "معركة اليرموك" },
+              { id: "c", answer: "معركة الخندق" },
+              { id: "d", answer: "معركة بدر" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 4,
+        question: [
+          {
+            label:
+              "ما هو اسم الاتفاقية التي وقعها النبي محمد صلى الله عليه وسلم مع قريش في صلح الحديبية؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "صلح الحديبية" },
+              { id: "b", answer: "صلح مكة" },
+              { id: "c", answer: "معاهدة المدينة" },
+              { id: "d", answer: "معاهدة الكعبة" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 5,
+        question: [
+          {
+            label: "من كان الخليفة الأموي الذي أمر ببناء قبة الصخرة في القدس؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "العباسي" },
+              { id: "b", answer: "عبد الملك بن مروان" },
+              { id: "c", answer: "المعتصم" },
+              { id: "d", answer: "الهادي" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 6,
+        question: [
+          {
+            label:
+              "ما هو اسم المعركة التي وقعت بين المسلمين والفرس في عهد الخليفة عمر بن الخطاب؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "معركة مؤتة" },
+              { id: "b", answer: "معركة القادسية" },
+              { id: "c", answer: "معركة اليرموك" },
+              { id: "d", answer: "معركة الجسر" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 7,
+        question: [
+          {
+            label:
+              "ما هو اسم العهد الذي أعطاه النبي محمد صلى الله عليه وسلم للأقباط في مصر؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "عهد الأقباط" },
+              { id: "b", answer: "وثيقة مكة" },
+              { id: "c", answer: "عهد الأقباط" },
+              { id: "d", answer: "وثيقة المدينة" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 8,
+        question: [
+          {
+            label: "من كان أول خليفة عباسي؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "أبو العباس السفاح" },
+              { id: "b", answer: "المأمون" },
+              { id: "c", answer: "المهدي" },
+              { id: "d", answer: "الهادي" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 9,
+        question: [
+          {
+            label:
+              "ما هو اسم الدولة التي أسسها سليمان القانوني في القرن السادس عشر الميلادي؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "الدولة الأموية" },
+              { id: "b", answer: "الدولة العثمانية" },
+              { id: "c", answer: "الدولة الفاطمية" },
+              { id: "d", answer: "الدولة العباسية" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 10,
+        question: [
+          {
+            label: "ما هو اسم الكتاب الذي ألفه ابن خلدون حول التاريخ؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "مقدمة ابن خلدون" },
+              { id: "b", answer: "الكتب الجغرافية" },
+              { id: "c", answer: "تاريخ الطبري" },
+              { id: "d", answer: "الفتوحات الإسلامية" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 11,
+        question: [
+          {
+            label: "من هو الخليفة العباسي الذي أمر ببناء بغداد؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "المعتصم" },
+              { id: "b", answer: "المأمون" },
+              { id: "c", answer: "أبو جعفر المنصور" },
+              { id: "d", answer: "الهادي" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 12,
+        question: [
+          {
+            label: "ما هي المدينة التي كانت عاصمة الدولة الأموية؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "القدس" },
+              { id: "b", answer: "دمشق" },
+              { id: "c", answer: "بغداد" },
+              { id: "d", answer: "القاهرة" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 13,
+        question: [
+          {
+            label: "ما هو اسم الملك الفاطمي الذي أمر ببناء جامع الأزهر؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "الحاكم بأمر الله" },
+              { id: "b", answer: "المهدي" },
+              { id: "c", answer: "الظاهر" },
+              { id: "d", answer: "المعز لدين الله" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 14,
+        question: [
+          {
+            label:
+              "ما هو اسم المعركة التي انتصر فيها المسلمون على الفرس في عهد الخليفة عمر بن الخطاب؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "معركة مؤتة" },
+              { id: "b", answer: "معركة القادسية" },
+              { id: "c", answer: "معركة الخندق" },
+              { id: "d", answer: "معركة بدر" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 15,
+        question: [
+          {
+            label: "من هو مؤسس الدولة الأموية؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "عبد الملك بن مروان" },
+              { id: "b", answer: "العباس بن عبد المطلب" },
+              { id: "c", answer: "مروان بن الحكم" },
+              { id: "d", answer: "عبد الله بن الزبير" },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id:18,
+    subject:"Quranic Knowledge",
+    quiz:[
+      {
+        id: 0,
+        question: [
+          {
+            label: "ما هي السورة التي تُعتبر قلب القرآن؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "سورة الفاتحة" },
+              { id: "b", answer: "سورة يس" },
+              { id: "c", answer: "سورة البقرة" },
+              { id: "d", answer: "سورة الكهف" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 1,
+        question: [
+          {
+            label: "ما هي السورة التي تحتوي على أطول آية في القرآن؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "سورة البقرة" },
+              { id: "b", answer: "سورة آل عمران" },
+              { id: "c", answer: "سورة النساء" },
+              { id: "d", answer: "سورة المائدة" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
+        question: [
+          {
+            label: "ما هي السورة التي يُطلق عليها اسم 'سورة الشفاعة'؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "سورة الفلق" },
+              { id: "b", answer: "سورة الإخلاص" },
+              { id: "c", answer: "سورة الكافرون" },
+              { id: "d", answer: "سورة النبأ" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 3,
+        question: [
+          {
+            label: "ما هي السورة التي تُسمى بـ'سورة الصمد'؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "سورة الفاتحة" },
+              { id: "b", answer: "سورة الإخلاص" },
+              { id: "c", answer: "سورة الرحمن" },
+              { id: "d", answer: "سورة الفلق" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 4,
+        question: [
+          {
+            label: "من هو النبي الذي ذُكر اسمه في سورة مريم؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "عيسى" },
+              { id: "b", answer: "موسى" },
+              { id: "c", answer: "محمد" },
+              { id: "d", answer: "إبراهيم" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 5,
+        question: [
+          {
+            label: "ما هي السورة التي تحتوي على آية الكرسي؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "سورة الرحمن" },
+              { id: "b", answer: "سورة الإخلاص" },
+              { id: "c", answer: "سورة البقرة" },
+              { id: "d", answer: "سورة النصر" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 6,
+        question: [
+          {
+            label: "ما هي السورة التي تُسمى بـ'سورة الحج'؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "سورة القمر" },
+              { id: "b", answer: "سورة النبأ" },
+              { id: "c", answer: "سورة الروم" },
+              { id: "d", answer: "سورة الحج" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 7,
+        question: [
+          {
+            label: "ما هي السورة التي تُعنى بحياة الإنسان في الدنيا والآخرة؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "سورة الفاتحة" },
+              { id: "b", answer: "سورة الكهف" },
+              { id: "c", answer: "سورة السجدة" },
+              { id: "d", answer: "سورة الأنعام" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 8,
+        question: [
+          {
+            label: "ما هو اسم السورة التي تحتوي على وصف للمؤمنين في القرآن؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "سورة الفلق" },
+              { id: "b", answer: "سورة الإخلاص" },
+              { id: "c", answer: "سورة الكافرون" },
+              { id: "d", answer: "سورة المؤمنون" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 9,
+        question: [
+          {
+            label: "ما هي السورة التي تبدأ بـ'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ'؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "سورة الفاتحة" },
+              { id: "b", answer: "سورة الكهف" },
+              { id: "c", answer: "سورة النصر" },
+              { id: "d", answer: "سورة الإخلاص" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 10,
+        question: [
+          {
+            label: "من هو النبي الذي ذُكر اسمه في سورة البقرة؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "عيسى" },
+              { id: "b", answer: "موسى" },
+              { id: "c", answer: "محمد" },
+              { id: "d", answer: "إبراهيم" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 11,
+        question: [
+          {
+            label: "ما هي السورة التي تُعدّ أطول سورة في القرآن؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "سورة البقرة" },
+              { id: "b", answer: "سورة آل عمران" },
+              { id: "c", answer: "سورة النساء" },
+              { id: "d", answer: "سورة المائدة" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 12,
+        question: [
+          {
+            label: "ما هي السورة التي تبدأ بـ'قُلْ هُوَ ٱللَّهُ أَحَدٌ'؟",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "سورة الفلق" },
+              { id: "b", answer: "سورة الإخلاص" },
+              { id: "c", answer: "سورة الناس" },
+              { id: "d", answer: "سورة الكافرون" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 13,
+        question: [
+          {
+            label: "ما هي السورة التي تُعنى بأحداث معركة بدر؟",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "سورة المائدة" },
+              { id: "b", answer: "سورة آل عمران" },
+              { id: "c", answer: "سورة الأنفال" },
+              { id: "d", answer: "سورة البراءة" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 14,
+        question: [
+          {
+            label: "ما هي السورة التي تتحدث عن النعيم والجحيم؟",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "سورة الفتح" },
+              { id: "b", answer: "سورة الفجر" },
+              { id: "c", answer: "سورة الإسراء" },
+              { id: "d", answer: "سورة الحاقة" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 15,
+        question: [
+          {
+            label: "ما هو اسم السورة التي تتحدث عن خلق الإنسان؟",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "سورة الإنسان" },
+              { id: "b", answer: "سورة النبأ" },
+              { id: "c", answer: "سورة الكهف" },
+              { id: "d", answer: "سورة البينة" },
+            ],
+          },
+        ],
+      },
+    ]
+  }
 ];
