@@ -13,22 +13,20 @@ import QuizScore from "./quiz-score";
 export default function QuizWrapper() {
     const context = useContext(QuizContext);
     if (!context) {
-        return;
+        return <div>No data!!!!!!!</div>;
     }
     const { Replay, score, quizState, quizData, CheckAnswer, NextQuestion, disablAnswers, isAnswered } = context;
     return (
-        <section className="w-full h-full md:max-w-2xl flex flex-col gap-10 justify-center items-center mx-auto">
-            {
-                /* <div className="w-full">
-                    <SelectQuizSubject />
-                </div> */
-            }
+        <section className="w-full h-full md:max-w-2xl flex flex-col gap-6 justify-center items-center mx-auto">
+            <div className={clsx("w-full", quizData ? "block" : "hidden")}>
+                <SelectQuizSubject />
+            </div>
             {
                 quizData && <QuizProgress quizState={quizState} />
             }
             {
                 quizState.length > 0 ? quizData?.question.map(qts => (
-                    <div className={clsx("w-full flex flex-col items-center md:gap-24 gap-16")} key={quizData?.id}>
+                    <div className={clsx("w-full flex flex-col items-center md:gap-20 gap-16")} key={quizData?.id}>
                         <div className="w-full rounded-xl text-center bg-[#FFBF00] shadow-md border-l-4 border-[#FF9A00] md:px-8 px-4 md:py-6 py-4">
 
                             <p className="text-3xl md:font-semibold font-bold md:tracking-wider tracking-wide text-primary select-none">{qts.label}</p>

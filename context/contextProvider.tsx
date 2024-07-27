@@ -1,54 +1,49 @@
 "use client";
-import { QuizQuestionProps, QuizQuestions, QuizQuestionsProps } from "@/lib/quiz-questions/q";
-import { createContext, useState, useEffect, Dispatch, SetStateAction } from "react";
-
-type isAnsweredTypes = {
-  status: boolean;
-  answer: boolean
-  rightOne: string;
-  userOne: string
-}
-export type scoreTypes = { points: number; result: string }
-
-interface QuizContextType {
-  quizState: QuizQuestionsProps; setQuizState: Dispatch<SetStateAction<QuizQuestionsProps>>;
-  quizData: QuizQuestionProps | undefined; setQuizData: Dispatch<SetStateAction<QuizQuestionProps | undefined>>
-  isAnswered: isAnsweredTypes | undefined; setIsAnswered: Dispatch<SetStateAction<isAnsweredTypes | undefined>>
-  disablAnswers: boolean; setDisablAnswers: Dispatch<SetStateAction<boolean>>
-  score: scoreTypes; setScore: Dispatch<SetStateAction<scoreTypes>>
-
-  CheckAnswer: (rightOne: string, userOne: string) => void;
-  NextQuestion: (questionId: number) => void | boolean
-  Replay: () => void
-  SelectSubject: (value: string) => void
-}
-
+import {
+  QuizQuestionProps,
+  QuizQuestionsProps,
+  QuizQuestionsWithSubjects,
+} from "@/lib/quiz-questions/q";
+import { createContext, useState, useEffect } from "react";
+import { QuizContextType, isAnsweredTypes, scoreTypes } from "./contextTypes";
 
 export const QuizContext = createContext<QuizContextType | undefined>(
   undefined
 );
 
 export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
-  //? stock all "QuizQuestions":
-  function SelectSubject(value: string) {
-    console.log(value);
-  }
+  const [subject, setSubject] = useState("nature");
 
-  const [quizState, setQuizState] = useState<QuizQuestionsProps>(QuizQuestions);
+  //? Bring questions by subject and store it in "quizState":
+  const questionsBySubject = QuizQuestionsWithSubjects.filter(q => q.subject === subject);
+  const [quizState, setQuizState] = useState<QuizQuestionsProps>(questionsBySubject[0].quiz);
 
   //? Stock single "QuizQuestions":
   const [quizData, setQuizData] = useState<QuizQuestionProps>()
 
   const [isAnswered, setIsAnswered] = useState<isAnsweredTypes>()
   const [disablAnswers, setDisablAnswers] = useState<boolean>(false)
-  const [score, setScore] = useState<scoreTypes>({ points: 0, result: "Horible score!" });
+  const [score, setScore] = useState<scoreTypes>({ points: 0, result: "Horrible score!" });
 
-  const randomIndex: number = Math.floor(Math.random() * quizState.length);
+  function RandomN() {
+    const randomIndex: number = Math.floor(Math.random() * quizState.length);
+    return randomIndex;
+  }
 
-  //? Every time i remove question from "quizState", generate new question from new one:
+  //? Every time i remove question from "quizState", generate new question:
   useEffect(() => {
-    setQuizData(quizState[randomIndex])
+    setQuizData(quizState[RandomN()])
   }, [quizState])
+
+  //? Determine which subject a user want:
+  function SelectSubject(value: string) {
+    setScore(() => ({ points: 0, result: "Horrible score!" }));
+    setSubject(() => value);
+
+    const questionsBySubject = QuizQuestionsWithSubjects.filter(q => q.subject === value)
+    setQuizState(questionsBySubject[0].quiz);
+  }
+
 
   function CheckAnswer(rightOne: string, userOne: string) {
     setTimeout(() => {
@@ -67,7 +62,7 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
         return setIsAnswered(() => ({ status: true, answer: true, rightOne, userOne }))
       }
       return setIsAnswered(() => ({ status: true, answer: false, rightOne, userOne }));
-    }, 360);
+    }, 210);
   }
 
   function NextQuestion(questionId: number) {
@@ -81,12 +76,15 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
 
   function Replay() {
     setScore({ points: 0, result: "Horible score!" })
-    setQuizState(QuizQuestions)
+    setQuizState(questionsBySubject[0].quiz)
     return;
   }
 
+
+
   return (
     <QuizContext.Provider value={{
+      subject, setSubject,
       quizState, setQuizState,
       quizData, setQuizData,
       isAnswered, setIsAnswered,
@@ -102,3 +100,9 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
   )
 };
 
+
+// 0 -> Horrible
+// 1 - 4 -> Bad
+// 5 - 7 -> Laverage
+// 8 - 10 -> Good
+// 10< -> Excellent
