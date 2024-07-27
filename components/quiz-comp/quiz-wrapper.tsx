@@ -17,10 +17,10 @@ export default function QuizWrapper() {
     }
     const { Replay, score, quizState, quizData, CheckAnswer, NextQuestion, disablAnswers, isAnswered } = context;
     return (
-        <section className="w-full h-full md:max-w-2xl flex flex-col gap-6 justify-center items-center mx-auto">
-            <div className={clsx("w-full flex-col items-start gap-4", quizData ? "flex" : "hidden")}>
-
-                <div className={clsx("w-fit")}>
+        <section className="w-full h-full md:max-w-2xl flex flex-col gap-5 justify-center items-center mx-auto">
+            <div className={
+                clsx("w-full md:flex-row md:items-center flex-col items-start gap-4", quizData ? "flex" : "hidden")}>
+                <div className="w-fit">
                     <SelectQuizSubject />
                 </div>
                 <div className="w-full flex-1">
@@ -43,7 +43,7 @@ export default function QuizWrapper() {
                                     variant={"secondary"}
                                     disabled={disablAnswers}
                                     onClick={() => CheckAnswer(qts.rightAnswer, answer.id)}
-                                    className={clsx("h-fit py-1.5 flex justify-start text-lg md:font-medium font-semibold select-none text-wrap gap-2",
+                                    className={clsx("h-fit py-2 flex justify-start text-lg md:font-medium font-semibold select-none text-wrap gap-2",
                                         isAnswered?.status &&
                                         (isAnswered?.answer ?
                                             (qts.rightAnswer === answer.id && rightAnswerStyle) :

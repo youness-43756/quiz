@@ -65,7 +65,7 @@ export function SelectQuizSubject() {
             onValueChange={(v: string) => SelectSubject(v)}
             value={subject}
         >
-            <SelectTrigger className="w-[180px] text-base relative z-10">
+            <SelectTrigger className="w-[180px] capitalize text-base relative z-10">
                 <SelectValue placeholder="Select a subject" />
             </SelectTrigger>
             <SelectContent className="absolute z-20 bg-white shadow-lg">
