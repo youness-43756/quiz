@@ -37,7 +37,11 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
   //? Determine which subject a user want:
   function SelectSubject(value: string) {
     setIsAnswered(() => undefined)
-    setDisablAnswers(() => false);
+    setDisablAnswers(() => true);
+    setTimeout(() => {
+      setDisablAnswers(() => false);
+    }, 110);
+
     setScore(() => ({ points: 0, result: "Horrible score!" }));
     setSubject(() => value);
 
