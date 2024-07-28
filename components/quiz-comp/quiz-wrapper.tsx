@@ -30,12 +30,12 @@ export default function QuizWrapper() {
             {
                 quizState.length > 0 ? quizData?.question.map(qts => (
                     <div className={clsx("w-full flex flex-col items-center md:gap-20 gap-16")} key={quizData?.id}>
-                        <div className="w-full rounded-xl text-center bg-[#FFBF00] shadow-md border-l-8 border-[#FF9A00] md:px-8 px-4 md:py-6 py-4">
-                            <p className="text-3xl md:font-semibold font-bold md:tracking-wider tracking-wide text-primary select-none">
+                        <div className="w-full rounded-xl text-center bg-[#FFBF00] shadow-md border-l-8 border-[#FF9A00] md:px-8 px-2 md:py-6 py-5">
+                            <p className="md:text-3xl text-xl md:font-semibold font-bold md:tracking-wider tracking-wide text-primary select-none">
                                 {qts.label}
                             </p>
                         </div>
-                        <div className="w-full grid md:grid-cols-2 gap-5 px-6">
+                        <div className="w-full grid md:grid-cols-2 gap-5 px-4">
                             {
                                 qts.answers.map(answer => <Button
                                     size={"lg"}
@@ -43,7 +43,7 @@ export default function QuizWrapper() {
                                     variant={"secondary"}
                                     disabled={disablAnswers}
                                     onClick={() => CheckAnswer(qts.rightAnswer, answer.id)}
-                                    className={clsx("h-fit py-2 flex justify-start text-lg md:font-medium font-semibold select-none text-wrap gap-2",
+                                    className={clsx("h-full py-2 flex justify-start md:text-lg text-base md:font-medium font-semibold select-none text-wrap gap-2",
                                         isAnswered?.status &&
                                         (isAnswered?.answer ?
                                             (qts.rightAnswer === answer.id && rightAnswerStyle) :
