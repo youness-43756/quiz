@@ -80,7 +80,7 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   function Replay() {
-    console.log(score);
+    //? restart score && quizState:
     setScore({ points: 0, result: "Horible score!" })
     setQuizState(questionsBySubject[0].quiz)
     return;

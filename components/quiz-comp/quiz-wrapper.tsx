@@ -4,8 +4,6 @@ import { QuizContext } from "@/context/contextProvider";
 import { Button } from "../ui/button";
 import clsx from "clsx";
 import { ArrowBigRight } from "lucide-react";
-import { RotateCcw } from "lucide-react";
-import { rightAnswerStyle, wrongAnswerStyle } from "./quiz-buttons-effect";
 import { SelectQuizSubject } from "./quiz-subjects";
 import { QuizProgress } from "./quiz-progress";
 import QuizScore from "./quiz-score";
@@ -17,7 +15,7 @@ export default function QuizWrapper() {
     if (!context) {
         return null;
     }
-    const { Replay, score, quizState, quizData, CheckAnswer, NextQuestion, disablAnswers, isAnswered } = context;
+    const { Replay, score, quizState, quizData, NextQuestion, isAnswered } = context;
     return (
         <section className="w-full h-full md:max-w-2xl flex flex-col gap-5 justify-center items-center mx-auto">
             <div className={
@@ -44,21 +42,17 @@ export default function QuizWrapper() {
                     </div>
                 )) : <QuizScore replay={Replay} score={score} />
             }
-            {
-                isAnswered ? (
-                    <div className="w-full">
-                        <Button
-                            size={"default"}
-                            variant={"secondary"}
-                            className="float-right text-lg"
-                            onClick={() => NextQuestion(quizData?.id as number)}
-                        >
-                            <span>Next</span>
-                            <ArrowBigRight className="ml-2" />
-                        </Button>
-                    </div>
-                ) : null
-            }
+            <div className={clsx("w-full h-10 flex items-center justify-end", !quizData && "hidden")}>
+                <Button
+                    size={"default"}
+                    variant={"secondary"}
+                    className={clsx("float-right text-lg hidden", isAnswered && "flex")}
+                    onClick={() => NextQuestion(quizData?.id as number)}
+                >
+                    <span>Next</span>
+                    <ArrowBigRight className="ml-2" />
+                </Button>
+            </div>
         </section >
     )
 }
