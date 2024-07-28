@@ -9,11 +9,13 @@ import { rightAnswerStyle, wrongAnswerStyle } from "./quiz-buttons-effect";
 import { SelectQuizSubject } from "./quiz-subjects";
 import { QuizProgress } from "./quiz-progress";
 import QuizScore from "./quiz-score";
+import QuizAnswersButtons from "./quiz-answers-buttons";
+import QuizQuestion from "./quiz-question";
 
 export default function QuizWrapper() {
     const context = useContext(QuizContext);
     if (!context) {
-        return <div>No data!!!!!!!</div>;
+        return null;
     }
     const { Replay, score, quizState, quizData, CheckAnswer, NextQuestion, disablAnswers, isAnswered } = context;
     return (
@@ -29,33 +31,14 @@ export default function QuizWrapper() {
             </div>
             {
                 quizState.length > 0 ? quizData?.question.map(qts => (
-                    <div className={clsx("w-full flex flex-col items-center md:gap-20 gap-16")} key={quizData?.id}>
-                        <div className="w-full rounded-xl text-center bg-[#FFBF00] shadow-md border-l-8 border-[#FF9A00] md:px-8 px-2 md:py-6 py-5">
-                            <p className="md:text-3xl text-xl md:font-semibold font-bold md:tracking-wider tracking-wide text-primary select-none">
-                                {qts.label}
-                            </p>
+                    <div className="w-full flex flex-col items-center md:gap-20 gap-16" key={quizData?.id}>
+                        <div className="w-full rounded-xl text-center bg-[#FFBF00] shadow-md border-l-8 border-[#FF9A00] md:px-8 px-3 md:py-6 py-5">
+                            <QuizQuestion question={qts.label} />
                         </div>
+
                         <div className="w-full grid md:grid-cols-2 gap-5 px-4">
                             {
-                                qts.answers.map(answer => <Button
-                                    size={"lg"}
-                                    key={answer.id}
-                                    variant={"secondary"}
-                                    disabled={disablAnswers}
-                                    onClick={() => CheckAnswer(qts.rightAnswer, answer.id)}
-                                    className={clsx("h-full py-2 flex justify-start md:text-lg text-base md:font-medium font-semibold select-none text-wrap gap-2",
-                                        isAnswered?.status &&
-                                        (isAnswered?.answer ?
-                                            (qts.rightAnswer === answer.id && rightAnswerStyle) :
-
-                                            (isAnswered?.userOne === answer.id ? wrongAnswerStyle :
-                                                (qts.rightAnswer === answer.id && rightAnswerStyle))
-                                        ))
-                                    }
-                                >
-                                    <span className="text-gray-500">{answer.id.toUpperCase()}:</span>
-                                    <span className="grow leading-5">{answer.answer}</span>
-                                </Button>)
+                                qts.answers.map(answer => <QuizAnswersButtons question={qts} answer={answer} key={answer.id} />)
                             }
                         </div>
                     </div>
