@@ -29,7 +29,7 @@ export default function QuizWrapper() {
             </div>
             {
                 quizState.length > 0 ? quizData?.question.map(qts => (
-                    <div className="w-full flex flex-col items-center md:gap-20 gap-16" key={quizData?.id}>
+                    <div className="w-full flex flex-col items-center md:gap-20 gap-14" key={quizData?.id}>
                         <div className="w-full rounded-xl text-center bg-[#FFBF00] shadow-md border-l-8 border-[#FF9A00] md:px-8 px-3 md:py-6 py-5">
                             <QuizQuestion question={qts.label} />
                         </div>
