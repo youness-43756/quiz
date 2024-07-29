@@ -1,8 +1,8 @@
 "use client"
+import clsx from "clsx";
 import { useContext } from "react";
 import { QuizContext } from "@/context/contextProvider";
 import { Button } from "../ui/button";
-import clsx from "clsx";
 import { ArrowBigRight } from "lucide-react";
 import { SelectQuizSubject } from "./quiz-subjects";
 import { QuizProgress } from "./quiz-progress";
@@ -29,7 +29,7 @@ export default function QuizWrapper() {
             </div>
             {
                 quizState.length > 0 ? quizData?.question.map(qts => (
-                    <div className="w-full flex flex-col items-center md:gap-20 gap-14" key={quizData?.id}>
+                    <div className="w-full flex flex-col items-center md:gap-16 gap-14" key={quizData?.id}>
                         <div className="w-full rounded-xl text-center bg-[#FFBF00] shadow-md border-l-8 border-[#FF9A00] md:px-8 px-3 md:py-6 py-5">
                             <QuizQuestion question={qts.label} />
                         </div>
@@ -42,6 +42,7 @@ export default function QuizWrapper() {
                     </div>
                 )) : <QuizScore replay={Replay} score={score} />
             }
+
             <div className={clsx("w-full h-10 flex items-center justify-end", !quizData && "hidden")}>
                 <Button
                     size={"default"}
@@ -49,7 +50,7 @@ export default function QuizWrapper() {
                     className={clsx("float-right text-lg hidden", isAnswered && "flex")}
                     onClick={() => NextQuestion(quizData?.id as number)}
                 >
-                    <span>Next</span>
+                    <span className="">Next</span>
                     <ArrowBigRight className="ml-2" />
                 </Button>
             </div>

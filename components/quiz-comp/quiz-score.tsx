@@ -15,6 +15,7 @@ export default function QuizScore({ replay, score }:
                         score.points <= 7 ? <Meh className={scoreEmojiStyle} /> :
                             score.points <= 10 ? <Smile className={scoreEmojiStyle} /> : <Flame className={scoreEmojiStyle} />
             }
+            
             <Button variant={"destructive"} onClick={() => replay()}>
                 <RotateCcw />
             </Button>

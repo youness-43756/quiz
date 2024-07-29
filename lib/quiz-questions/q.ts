@@ -2,7 +2,7 @@ import { QuizQuestionsWithSubjectsTypes } from "./qTypes";
 
 export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
   {
-    id: 15,
+    id: 0,
     subject: "Hadith and Sunnah",
 
     quiz: [
@@ -5249,4 +5249,250 @@ export const QuizQuestionsWithSubjects: QuizQuestionsWithSubjectsTypes = [
       },
     ],
   },
+  {
+    id :21,
+    subject:"economy",
+    quiz:[
+      {
+        id: 0,
+        question: [
+          {
+            label: "What is the primary measure of a country's economic performance?",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "Gross Domestic Product (GDP)" },
+              { id: "b", answer: "Inflation Rate" },
+              { id: "c", answer: "Unemployment Rate" },
+              { id: "d", answer: "Balance of Trade" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 1,
+        question: [
+          {
+            label: "What is the term for a market structure with a single seller and no close substitutes?",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "Oligopoly" },
+              { id: "b", answer: "Monopoly" },
+              { id: "c", answer: "Monopolistic Competition" },
+              { id: "d", answer: "Perfect Competition" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
+        question: [
+          {
+            label: "What economic principle describes the reduction in costs per unit resulting from increased production?",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "Law of Supply" },
+              { id: "b", answer: "Law of Demand" },
+              { id: "c", answer: "Economies of Scale" },
+              { id: "d", answer: "Marginal Utility" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 3,
+        question: [
+          {
+            label: "Which economist is known for his theories on the invisible hand and free markets?",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "John Maynard Keynes" },
+              { id: "b", answer: "Karl Marx" },
+              { id: "c", answer: "Milton Friedman" },
+              { id: "d", answer: "Adam Smith" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 4,
+        question: [
+          {
+            label: "What term describes a sustained increase in the general price level of goods and services?",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "Inflation" },
+              { id: "b", answer: "Deflation" },
+              { id: "c", answer: "Stagflation" },
+              { id: "d", answer: "Recession" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 5,
+        question: [
+          {
+            label: "What is the main function of the World Bank?",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "Regulate global trade" },
+              { id: "b", answer: "Provide financial and technical assistance to developing countries" },
+              { id: "c", answer: "Maintain international peace and security" },
+              { id: "d", answer: "Manage the world's money supply" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 6,
+        question: [
+          {
+            label: "What type of unemployment occurs when workers' skills do not match job requirements?",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "Cyclical Unemployment" },
+              { id: "b", answer: "Frictional Unemployment" },
+              { id: "c", answer: "Structural Unemployment" },
+              { id: "d", answer: "Seasonal Unemployment" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 7,
+        question: [
+          {
+            label: "What does the term 'fiat money' refer to?",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "Money backed by gold" },
+              { id: "b", answer: "Money that can be exchanged for a commodity" },
+              { id: "c", answer: "Money with intrinsic value" },
+              { id: "d", answer: "Money that has value because of government regulation or law" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 8,
+        question: [
+          {
+            label: "Which organization is responsible for monitoring and stabilizing global financial systems?",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "International Monetary Fund (IMF)" },
+              { id: "b", answer: "World Health Organization (WHO)" },
+              { id: "c", answer: "World Trade Organization (WTO)" },
+              { id: "d", answer: "United Nations (UN)" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 9,
+        question: [
+          {
+            label: "What is the primary goal of monetary policy?",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "Increase government spending" },
+              { id: "b", answer: "Control inflation and stabilize the currency" },
+              { id: "c", answer: "Regulate international trade" },
+              { id: "d", answer: "Reduce unemployment" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 10,
+        question: [
+          {
+            label: "What is a trade deficit?",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "When a country's exports exceed its imports" },
+              { id: "b", answer: "When a country has no international trade" },
+              { id: "c", answer: "When a country's imports exceed its exports" },
+              { id: "d", answer: "When a country's imports and exports are equal" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 11,
+        question: [
+          {
+            label: "What is the economic term for a market where a few large firms dominate?",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "Oligopoly" },
+              { id: "b", answer: "Monopoly" },
+              { id: "c", answer: "Perfect Competition" },
+              { id: "d", answer: "Monopolistic Competition" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 12,
+        question: [
+          {
+            label: "What is the function of a central bank?",
+            rightAnswer: "d",
+            answers: [
+              { id: "a", answer: "Collect taxes" },
+              { id: "b", answer: "Regulate international trade" },
+              { id: "c", answer: "Provide loans to businesses" },
+              { id: "d", answer: "Control the money supply and interest rates" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 13,
+        question: [
+          {
+            label: "Which economic theory advocates for minimal government intervention in the economy?",
+            rightAnswer: "a",
+            answers: [
+              { id: "a", answer: "Laissez-faire" },
+              { id: "b", answer: "Keynesianism" },
+              { id: "c", answer: "Mercantilism" },
+              { id: "d", answer: "Socialism" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 14,
+        question: [
+          {
+            label: "What is a progressive tax?",
+            rightAnswer: "b",
+            answers: [
+              { id: "a", answer: "A tax that everyone pays at the same rate" },
+              { id: "b", answer: "A tax that increases as the taxable amount increases" },
+              { id: "c", answer: "A tax on goods and services" },
+              { id: "d", answer: "A tax that decreases as the taxable amount increases" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 15,
+        question: [
+          {
+            label: "What is the economic term for the ability to produce a good at a lower opportunity cost than another producer?",
+            rightAnswer: "c",
+            answers: [
+              { id: "a", answer: "Absolute Advantage" },
+              { id: "b", answer: "Competitive Advantage" },
+              { id: "c", answer: "Comparative Advantage" },
+              { id: "d", answer: "Productivity Advantage" },
+            ],
+          },
+        ],
+      },
+    ]
+  }
 ];

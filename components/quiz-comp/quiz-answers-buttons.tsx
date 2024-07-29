@@ -16,6 +16,7 @@ type questionTypes = {
     answer: { id: string, answer: string }
 }
 
+
 export default function QuizAnswersButtons({ question, answer }: questionTypes) {
     const context = useContext(QuizContext);
     if (!context) {

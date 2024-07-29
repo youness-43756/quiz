@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { nunito, roboto } from "@/components/ui/font/f";
+import { nunito, poppins, roboto, roboto_Slab } from "@/components/ui/font/f";
 import { QuizProvider } from "@/context/contextProvider";
 
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.className} bg-[#808836] max-w-[1440px] max-h-screen mx-auto h-screen`}>
+      <body className={`${poppins.className} bg-[#808836] max-w-[1440px] max-h-screen mx-auto h-screen`}>
         <QuizProvider>
           <div className="md:px-10 px-3 h-full">{children}</div>
         </QuizProvider>
