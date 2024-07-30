@@ -18,7 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${nunito.className} bg-[#808836] max-w-[1440px] max-h-screen mx-auto h-screen`}>
         <QuizProvider>
-          <div className="md:px-10 px-3 h-full">{children}</div>
+          <div className="md:px-10 px-3 h-full">
+            {children}
+            </div>
         </QuizProvider>
       </body>
     </html>

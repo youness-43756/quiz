@@ -3,7 +3,7 @@ import {
   QuizQuestionsWithSubjects,
 } from "@/lib/quiz-questions/q";
 import { createContext, useState, useEffect } from "react";
-import { QuizContextType, isAnsweredTypes, scoreTypes } from "./contextTypes";
+import { QuizContextType, isAnsweredTypes, scoreTypes, showAnswerTypes } from "./contextTypes";
 import { QuizQuestionTypes, QuizQuestionsTypes } from "@/lib/quiz-questions/qTypes";
 
 export const QuizContext = createContext<QuizContextType | undefined>(
@@ -17,7 +17,7 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
   }
   const [subject, setSubject] = useState(QuizQuestionsWithSubjects[RandomIndexGenerator(QuizQuestionsWithSubjects)].subject);
 
-  //? Bring questions by subject and store it in "quizState":
+  //? Bring all "questions" by "subject" and store it in "quizState":
   const questionsBySubject = QuizQuestionsWithSubjects.filter(q => q.subject === subject);
   const [quizState, setQuizState] = useState<QuizQuestionsTypes>(questionsBySubject[0].quiz);
 
@@ -27,16 +27,18 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
   const [isAnswered, setIsAnswered] = useState<isAnsweredTypes>()
   const [disablAnswers, setDisablAnswers] = useState<boolean>(false)
   const [score, setScore] = useState<scoreTypes>({ points: 0, result: "Horrible score!" });
-
+  const [showAnswer, setShowAnswer] = useState<showAnswerTypes>({ status: false, times: 3 });
 
   //? Every time i remove question from "quizState", generate new question:
   useEffect(() => {
-    setQuizData(quizState[RandomIndexGenerator(quizState)])
+    setQuizData(() => quizState[RandomIndexGenerator(quizState)])
   }, [quizState])
 
   //? Determine which subject a user want:
   function SelectSubject(value: string) {
+    setShowAnswer(() => ({ status: false, times: 3 }))
     setIsAnswered(() => undefined)
+
     setDisablAnswers(() => true);
     setTimeout(() => {
       setDisablAnswers(() => false);
@@ -49,29 +51,39 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
     setQuizState(questionsBySubject[0].quiz);
   }
 
+  function HightLightRightAnswer() {
+    if (showAnswer.times > 0) {
+      setShowAnswer((prev) => ({ status: true, times: prev.times - 1 }))
+      return true;
+    }
+    return false;
+  }
 
   function CheckAnswer(rightOne: string, userOne: string) {
+    //? Modifie score:
+    rightOne === userOne && (
+      setScore(prev => ({
+        points: prev.points + 1,
+        result: (
+          prev.points < 4 ? "Bad score" :
+            prev.points < 7 ? "Laverage score" :
+              prev.points < 10 ? "Good score" : "Excellent score"
+        )
+      }))
+    )
     setTimeout(() => {
-      //? enable answers buttons:
       setDisablAnswers(() => true);
-      if (rightOne === userOne) {
 
-        setScore(prev => ({
-          points: prev.points + 1,
-          result: (
-            prev.points < 4 ? "Bad score" :
-              prev.points < 7 ? "Laverage score" :
-                prev.points < 10 ? "Good score" : "Excellent score"
-          )
-        }));
-        return setIsAnswered(() => ({ status: true, answer: true, rightOne, userOne }))
+      if (rightOne === userOne) {
+        return setIsAnswered(() => ({ status: true, isAnswerRight: true, disablAnswersButtons: true, rightOne, userOne }))
       }
-      return setIsAnswered(() => ({ status: true, answer: false, rightOne, userOne }));
+      return setIsAnswered(() => ({ status: true, isAnswerRight: false, disablAnswersButtons: true, rightOne, userOne }));
     }, 210);
   }
 
   function NextQuestion(questionId: number) {
-    setIsAnswered(undefined);
+    setShowAnswer((prev) => ({ ...prev, status: false }))
+    setIsAnswered(() => undefined);
     setDisablAnswers(() => false);
 
     //? remove current question from "quizState":
@@ -80,9 +92,12 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   function Replay() {
+    //? restart answer highlighter:
+    setShowAnswer(() => ({ status: false, times: 3 }))
+
     //? restart score && quizState:
-    setScore({ points: 0, result: "Horible score!" })
-    setQuizState(questionsBySubject[0].quiz)
+    setScore(() => ({ points: 0, result: "Horrible score!" }))
+    setQuizState(questionsBySubject[0].quiz);
     return;
   }
 
@@ -96,8 +111,10 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
       isAnswered, setIsAnswered,
       disablAnswers, setDisablAnswers,
       score, setScore,
+      showAnswer, setShowAnswer,
 
       //?functions
+      HightLightRightAnswer,
       NextQuestion,
       CheckAnswer,
       Replay,

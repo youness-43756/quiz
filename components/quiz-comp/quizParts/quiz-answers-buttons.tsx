@@ -1,6 +1,6 @@
 import { QuizContext } from "@/context/contextProvider"
 import { useContext } from "react"
-import { Button } from "../ui/button"
+import { Button } from "../../ui/button"
 import clsx from "clsx"
 import { rightAnswerStyle, wrongAnswerStyle } from "./quiz-buttons-effect"
 
@@ -22,21 +22,22 @@ export default function QuizAnswersButtons({ question, answer }: questionTypes) 
     if (!context) {
         return null;
     }
-    const { CheckAnswer, disablAnswers, isAnswered } = context;
+    const { CheckAnswer, disablAnswers, isAnswered, showAnswer } = context;
     return (
         <Button
             size={"lg"}
             variant={"secondary"}
-            disabled={disablAnswers}
+            disabled={disablAnswers || showAnswer.status}
             onClick={() => CheckAnswer(question.rightAnswer, answer.id)}
             className={clsx("h-full py-2 flex justify-start md:text-lg text-base md:font-medium font-semibold select-none text-wrap gap-2",
-                isAnswered?.status &&
-                (isAnswered?.answer ?
-                    (question.rightAnswer === answer.id && rightAnswerStyle) :
+                isAnswered?.status ?
+                    (isAnswered?.isAnswerRight ?
+                        (question.rightAnswer === answer.id && rightAnswerStyle) :
 
-                    (isAnswered?.userOne === answer.id ? wrongAnswerStyle :
-                        (question.rightAnswer === answer.id && rightAnswerStyle))
-                ))
+                        (isAnswered?.userOne === answer.id ? wrongAnswerStyle :
+                            (question.rightAnswer === answer.id && rightAnswerStyle))
+
+                    ) : showAnswer.status && ((question.rightAnswer === answer.id && rightAnswerStyle)))
             }
         >
             <span className="text-gray-500">{answer.id.toUpperCase()}:</span>

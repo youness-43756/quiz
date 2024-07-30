@@ -6,11 +6,20 @@ import { Dispatch, SetStateAction } from "react";
 
 export type isAnsweredTypes = {
   status: boolean;
-  answer: boolean;
+  isAnswerRight: boolean;
+  disablAnswersButtons: boolean;
   rightOne: string;
   userOne: string;
 };
-export type scoreTypes = { points: number; result: string };
+export type scoreTypes = {
+  points: number;
+  result: string;
+};
+export type showAnswerTypes = {
+  status: boolean;
+  times: number;
+};
+
 
 export interface QuizContextType {
   subject: string;
@@ -25,9 +34,12 @@ export interface QuizContextType {
   setDisablAnswers: Dispatch<SetStateAction<boolean>>;
   score: scoreTypes;
   setScore: Dispatch<SetStateAction<scoreTypes>>;
+  showAnswer: showAnswerTypes;
+  setShowAnswer: Dispatch<SetStateAction<showAnswerTypes>>;
 
+  SelectSubject: (value: string) => void;
   CheckAnswer: (rightOne: string, userOne: string) => void;
   NextQuestion: (questionId: number) => void | boolean;
   Replay: () => void;
-  SelectSubject: (value: string) => void;
+  HightLightRightAnswer: () => boolean;
 }
