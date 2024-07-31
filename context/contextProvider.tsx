@@ -52,7 +52,7 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   function HightLightRightAnswer() {
-    if (showAnswer.times > 0) {
+    if (showAnswer.times > 0 && !showAnswer.status) {
       setShowAnswer((prev) => ({ status: true, times: prev.times - 1 }))
       return true;
     }
