@@ -15,7 +15,7 @@ export default function QuizWrapper() {
     if (!context) {
         return null;
     }
-    const { Replay, score, quizState, quizData, NextQuestion, isAnswered, showAnswer, HightLightRightAnswer } = context;
+    const { Replay, score, quizState, quizData, NextQuestion, disablAnswers, isAnswered, showAnswer, HightLightRightAnswer } = context;
     return (
         <section className="w-full h-full md:max-w-2xl flex flex-col gap-5 justify-center mx-auto">
             <div className={clsx("w-full mb-4 md:flex-col md:items-center flex-col items-start gap-4", quizData ? "flex" : "hidden")}>
