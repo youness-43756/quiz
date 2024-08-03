@@ -3,7 +3,7 @@ import clsx from "clsx";
 import { useContext } from "react";
 import { QuizContext } from "@/context/contextProvider";
 import { Button } from "../ui/button";
-import { ArrowBigRight, Lightbulb } from "lucide-react";
+import { ArrowBigRight, Lightbulb, LightbulbOff } from "lucide-react";
 import { SelectQuizSubject } from "./quizParts/quiz-subjects";
 import { QuizProgress } from "./quizParts/quiz-progress";
 import QuizScore from "./quizParts/quiz-score";
@@ -15,7 +15,7 @@ export default function QuizWrapper() {
     if (!context) {
         return null;
     }
-    const { Replay, score, quizState, quizData, NextQuestion, disablAnswers, isAnswered, showAnswer, HightLightRightAnswer } = context;
+    const { Replay, score, quizState, quizData, NextQuestion, isAnswered, showAnswer, HightLightRightAnswer } = context;
     return (
         <section className="w-full h-full md:max-w-2xl flex flex-col gap-5 justify-center mx-auto">
             <div className={clsx("w-full mb-4 md:flex-col md:items-center flex-col items-start gap-4", quizData ? "flex" : "hidden")}>
@@ -25,7 +25,9 @@ export default function QuizWrapper() {
                         disabled={showAnswer.times === 0 && true}
                         onClick={() => HightLightRightAnswer()}
                     >
-                        <Lightbulb />
+                        {
+                            showAnswer.times === 0 ? <LightbulbOff /> : <Lightbulb />
+                        }
                         <span className="text-base font-semibold">: {showAnswer.times}</span>
                     </Button>
                 </div>

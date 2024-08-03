@@ -52,7 +52,7 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   function HightLightRightAnswer() {
-    //? "!showAnswer.status" & "!disablAnswers": this means "true", if answer clicked it turns to "false". so this function doesnt work
+    //? "!showAnswer.status" & "!disablAnswers": this means "true", if answer clicked, it turns to "false". so this function doesnt work
     if (showAnswer.times > 0 && !showAnswer.status && !disablAnswers) {
       setShowAnswer((prev) => ({ status: true, times: prev.times - 1 }))
       return true;
@@ -73,7 +73,7 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
       }))
     );
 
-    
+
     setTimeout(() => {
       setDisablAnswers(() => true);
       if (rightOne === userOne) {
